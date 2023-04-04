@@ -1,0 +1,71 @@
+.face-main-text {
+  left: 23%;
+}
+#faq {
+  background-color: rgba($primary-color, 0.2);
+  padding: 3rem 0;
+
+  .faq-btn {
+    background-color: $primary-color;
+    border-radius: 1rem;
+    margin: 0 46%;
+    width: 8%;
+
+    span {
+      @include button;
+      text-align: center;
+      &:hover {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .faq-container {
+    margin: 0 9%;
+
+    .questions {
+      background-color: $white-color;
+      margin-bottom: 1rem;
+      line-height: 2rem;
+
+      .question-title {
+        display: flex;
+        color: $primary-color;
+        font-family: $primary-font;
+        padding: 1rem;
+        justify-content: space-between;
+        position: relative;
+
+        .question-btn {
+          font-size: 1.3rem;
+          background-color: rgba($primary-color, 0.2);
+          border: 2px solid $primary-color;
+
+          .minus {
+            display: none;
+          }
+
+          .display-btns {
+            display: block;
+          }
+        }
+      }
+      .question-answer {
+        font-family: $secondary-font;
+        color: $black-color;
+        padding: 1rem;
+        display: none;
+        border-top: 2px solid rgba($primary-color, 0.5);
+      }
+      .display-btns {
+        display: block;
+      }
+    }
+  }
+}
+.display-btns {
+  display: block;
+}
+
+.unshow {
+  display: none;
+}

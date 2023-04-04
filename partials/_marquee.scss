@@ -1,0 +1,32 @@
+#maq{
+    // margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: $black-color;
+    color: $white-color;
+    height: 3rem;
+    overflow: hidden;
+
+    .marquee-container{
+        position: relative;
+
+        .marquee-words {
+            white-space: nowrap;
+            animation: marquee-keywords 15s linear infinite;
+            font-size: 1.3rem;
+            letter-spacing: 0.1rem;
+            font-family: $secondary-font;
+            position: absolute;
+       
+            @keyframes marquee-keywords {
+              0% {
+                left: 100%;
+              }
+              100% {
+                left: -170%;
+              }
+            }
+          }
+      }
+}
+

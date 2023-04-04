@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap&family=Quintessential&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+$primary-color: #602814;
+$secondary-color: #5b064d;
+$white-color: #fffffe;
+$black-color: #602814;
+$white-variant: #eeeef3;
+$light-brown: #d3a067;
+$dark-color: #292828;
+$container-lg: 82%;
+$container-md: 90%;
+$primary-font: "Playfair Display", serif;
+$secondary-font: "Lato", sans-serif;

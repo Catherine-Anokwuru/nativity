@@ -1,0 +1,96 @@
+#nav {
+  background-color: $white-color;
+  position: sticky;
+}
+
+#fac-header {
+  background-image: url(/images/dang/dang-model.webp);
+  height: 80vh;
+  width: 100vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  .layer {
+    background-color: rgba($black-color, 0.3);
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .face-main-text {
+    display: inline;
+    font-family: $secondary-font;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    color: $white-color;
+    width: 100vw;
+  }
+}
+
+#blog {
+  // #blogger {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin: 0 9%;
+
+  overflow: hidden;
+  // padding: 0 9%;
+  // width: 100vw;
+  .b-card {
+    border: none;
+    // width: 100%;
+    margin-bottom: 1rem;
+    
+
+
+    .blog-img {
+      width: 100%;
+      img {
+        width: 100%;
+      height:  20rem;
+
+        // display: block;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+    .blog-text {
+      border-top: 3px solid rgba($black-color, 0.3);
+      padding: 1rem;
+      line-height: 1.8rem;
+      text-align: center;
+      &:hover {
+        button {
+          display: inline-block;
+        }
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-family: $primary-font;
+      }
+
+      p {
+        font-family: $secondary-font;
+        font-size: 1rem;
+      }
+
+      button {
+        display: none;
+        span {
+          @include button;
+        }
+      }
+    }
+  }
+}
+// }

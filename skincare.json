@@ -1,0 +1,468 @@
+[
+  {
+    "id": "sbhd",
+    "name": "Nokware neem face cleanser",
+    "price": "₦6,500",
+    "brand": "Nokware",
+    "usage": "face",
+    "category": "soap",
+    "skinType": ["sensitive", "combination", "normal"],
+    "skinIssue": ["acne", "hyperpigmentation"],
+    "image": "images/nokware/neemfacecleanser.jpg",
+    "description": "A gentle exfoliating face cleanser made with Willow bark extract, Hempseed oil and Neem oil to remove impurities and excess oils whiles reducing acne and treating hyperpigmentation. With added glycerin and hyaluronic acid to hydrate the skin whiles exfoliating."
+  },
+
+  {
+    "id": "ded",
+    "name": "Dang ageless foaming face wash",
+    "price": "₦12,000",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "soap",
+    "skinType": ["oily"],
+    "skinIssue": ["acne", "uneven skin texture"],
+    "image": "images/dang/face/DANG-Ageless-Foaming-Face-Wash.webp",
+    "description": "DANG! Ageless everyday gentle foaming face wash is a high quality face wash that thoroughly cleanses the skin repairs, smoothens and rejuvenates the skin for a healthier looking complexion. SLS Free."
+  },
+
+  {
+    "id": "frea",
+    "name": "Dang mandelic acid face wash",
+    "price": "₦10,000",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "soap",
+    "skinType": ["dry", "combination"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/dang/face/MandelicAcidFoamingFaceWash_mini.webp",
+    "description": "DANG! Ageless Mandelic 3-in-1 Face Wash (30ml) is a genuine foaming cleanser that banishes grimes while gently exfoliating deep down to the skin pores. Its cleaning enhances your complexion and leaves your skin smooth and soft. Squeeze a pea-sized amount of Mandelic 3-in-1 Face Wash in your palm. Gently massage your face for effective exfoliation. Rinse with lukewarm water and pat dry. Follow up with treatment and Moisturizer. During the day, finish with sunscreen. Mandelic 3-in-1 Face wash is brown colored due to raw honey mixed with mandelic acid. Ensure to shake slightly before use."
+  },
+
+  {
+    "id": "veqac",
+    "name": "Arami vanilla scented glow oil",
+    "price": "₦4,500",
+    "brand": "Arami",
+    "usage": "body",
+    "category": "oils",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/arami/oils/Glow-Oil-Vanilla-Spice-Landing-Page-main-768x1086.jpg",
+    "description": "In collaboration with Skin Science Africa, Glow Oil Vanilla Spice is a rich & smooth rendition of our bestselling multi-purpose oil. The creamy Vanilla Spice scent is Far From Ordinary, leaving you with feelings of peace & calm, whilst lifting your mood in a comforting way. Use as a daily moisturiser on your skin & to seal the ends of your hair, locking moisture into every aspect of your body."
+  },
+
+  {
+    "id": "wxde",
+    "name": "Nokware night-time face moisturizer",
+    "price": "₦8,000",
+    "brand": "Nokware",
+    "usage": "face",
+    "category": "lotion",
+    "skinType": ["normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/nokware/face/facemm.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "weca",
+    "name": "Dang azelaic acid pigmentation serum",
+    "price": "₦13,500",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "serum",
+    "skinType": ["sensitive", "normal"],
+    "skinIssue": ["hyperpigmentation", "dullness"],
+    "image": "images/dang/serum/Azelaic-acid-1-600x750.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "fdfv",
+    "name": "Nokware cinnamon hand lotion",
+    "price": "₦2,300",
+    "brand": "Nokware",
+    "usage": "hand",
+    "category": "lotion",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/nokware/hands/HandLotion-woodsy-768x768.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "wedaz",
+    "name": "Arami lemon oil",
+    "price": "₦4,500",
+    "brand": "Arami",
+    "usage": "body",
+    "category": "oils",
+    "skinType": ["combination", "dry", "oily", "normal"],
+    "skinIssue": ["hyperpigmentation"],
+    "image": "images/arami/oils/arami glow oil.png",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "bfgbg",
+    "name": "Arami face brightening serum",
+    "price": "₦4,500",
+    "brand": "Arami",
+    "usage": "face",
+    "category": "serum",
+    "skinType": ["dry", "normal"],
+    "skinIssue": ["hyperpigmentation", "dullness"],
+    "image": "images/arami/face/arami-essentials-hlr-drops-scaled-1.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "btgbs",
+    "name": "Arami gel face cream",
+    "price": "₦12,000",
+    "brand": "Arami",
+    "usage": "face",
+    "category": "lotion",
+    "skinType": ["dry", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/arami/face/arami-hydra-gel-2-680x920-1.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "luymf",
+    "name": "Dang vitamin c serum",
+    "price": "₦12,200",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "serum",
+    "skinType": ["oily", "normal", "combination"],
+    "skinIssue": ["acne", "hyperpigmentation", "uneven skin texture"],
+    "image": "images/dang/DANG-AGELESS-Q10-Vitamin-C-Oil-Serum-Scene-003.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "ncdt",
+    "name": "Nokware shea butter body lotion",
+    "price": "₦5,500",
+    "brand": "Nokware",
+    "usage": "body",
+    "category": "lotion",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/nokware/body/lotion/BodyLotion.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "ynm",
+    "name": "Nokware neem black soap",
+    "price": "₦3,800",
+    "brand": "Nokware",
+    "usage": "face",
+    "category": "soap",
+    "skinType": ["sensitive", "normal", "oily", "combination"],
+    "skinIssue": [
+      "hyperpigmentation",
+      "dullness",
+      "acne",
+      "uneven skin texture"
+    ],
+    "image": "images/nokware/face/calabash-neem-768x768.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "fbbft",
+    "name": "Nokware shea butter",
+    "price": "₦3,800",
+    "brand": "Nokware",
+    "usage": "body",
+    "category": "oils",
+    "skinType": ["combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/nokware/body/lotion/coconutpouch-768x768.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "vgr",
+    "name": "Arami face brightening mega duo",
+    "price": "₦22,500",
+    "brand": "Arami",
+    "usage": "face",
+    "category": "sets",
+    "skinType": ["combination", "normal", "oily"],
+    "skinIssue": ["hyperpigmentation", "dullness"],
+    "image": "images/arami/face/Mega-Glow-Duo-Mini.png",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "cwed",
+    "name": "Nokware glow oil",
+    "price": "₦2,500",
+    "brand": "Nokware",
+    "usage": "body",
+    "category": "oils",
+    "skinType": ["dry", "normal"],
+    "skinIssue": ["dryness", "dullness", "hyperpigmentation"],
+    "image": "images/nokware/glowgo-600x600.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "cwewsfd",
+    "name": "Dang snail serum",
+    "price": "₦12,200",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "serum",
+    "skinType": ["normal"],
+    "skinIssue": ["dryness", "dullness", "uneven skin texture"],
+    "image": "images/dang/serum/Snail-serum-1-600x750.webp",
+    "description": "The same way snails regenerate their own shell, our snail mucin repair serum will reinforce skin regeneration, reduce acne scars, moisturise dry skin, soothe damaged skin and give you an instant glow. With the help of tranexamic acid, it helps reduce hyperpigmentation. It contains Snail Secretion Filtrate, Tranexamic Acid, Aloe Vera. The multi function snail mucin repair serum takes what nature has given us and turns it into a safe formulation which not only protects your skin but keeps it healthy and glowing. Formulated in South Korea by board certified dermatologists, this serum contains minerals, antioxidants, growth factors amongst other ingredients great for improving wrinkles and skin texture, hydrating the skin and strengthening damaged skin barriers. Not to mention it works well with actives and layers nicely into your routine. Also stimulates collagen production giving you a plump, firm, elastic, youthful skin!."
+  },
+
+  {
+    "id": "fdwfr5t",
+    "name": "Dang sunscreen",
+    "price": "₦15,000",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "lotion",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["hyperpigmentation", "dullness"],
+    "image": "images/dang/face/Sunscreen-1-scaled.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "vefg",
+    "name": "Dang ageless body oil",
+    "price": "₦6,000",
+    "brand": "Dang",
+    "usage": "body",
+    "category": "oils",
+    "skinType": ["dry", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/dang/body/Dang-Body-Oil-2-1.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "weffw",
+    "name": "Dang ageless face set",
+    "price": "₦43,200",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "sets",
+    "skinType": ["combination", "dry", "oily", "normal"],
+    "skinIssue": [
+      "dryness",
+      "dullness",
+      "hyperpigmentation",
+      "uneven skin texture"
+    ],
+    "image": "images/dang/essentialset.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "fgadfg",
+    "name": "Arami peace set",
+    "price": "₦6,000",
+    "brand": "Arami",
+    "usage": "body",
+    "category": "sets",
+    "skinType": ["sensitive", "normal"],
+    "skinIssue": ["hyperpigmentation", "dullness", "uneven skin texture"],
+    "image": "images/arami/arami-essentials-peace-set-1-680x787.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "bae4r",
+    "name": "Dang acne set",
+    "price": "₦66,500",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "sets",
+    "skinType": ["oily", "combination"],
+    "skinIssue": [
+      "acne",
+      "dullness",
+      "uneven skin texture",
+      "hyperpigmentation"
+    ],
+    "image": "images/dang/dangbest.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "bavrwef4r",
+    "name": "Arami rose set",
+    "price": "₦16,000",
+    "brand": "Arami",
+    "usage": "face",
+    "category": "sets",
+    "skinType": ["sensitive", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/arami/set/Arami-V-Day-Rose-Box-1024x1024.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "defrg",
+    "name": "Dang mini face set",
+    "price": "₦15,200",
+    "brand": "Dang",
+    "usage": "face",
+    "category": "sets",
+    "skinType": ["oily", "combination"],
+    "skinIssue": ["dryness", "dullness", "acne", "uneven skin texture"],
+    "image": "images/dang/face/MiniSet_face.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "t4g45",
+    "name": "Dang body set",
+    "price": "₦45,200",
+    "brand": "Dang",
+    "usage": "body",
+    "category": "sets",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "dullness", "hyperpigmentation"],
+    "image": "images/dang/body/Dang-Ageless-Body-Acne-Kit-scaled.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "t5juj",
+    "name": "Dang ageless skin repair set",
+    "price": "₦104,000",
+    "brand": "Dang",
+    "usage": "body",
+    "category": "sets",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": [
+      "dryness",
+      "dullness",
+      "hyperpigmentation",
+      "uneven skin texture"
+    ],
+    "image": "images/dang/body/Skin-Repair-Set-scaled_500x.webp",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "yn5qw",
+    "name": "Arami dark charcoal gift box",
+    "price": "₦52,200",
+    "brand": "Arami",
+    "usage": "face",
+    "category": "sets",
+    "skinType": ["sensitive", "normal"],
+    "skinIssue": ["hyperpigmentation", "dullness"],
+    "image": "images/arami/set/Arami-V-Day-Bold-Box-1024x1024.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "hhvtrr",
+    "name": "Nokware him midi gift box",
+    "price": "₦22,600",
+    "brand": "Nokware",
+    "usage": "face",
+    "category": "sets",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "dullness", "hyperpigmentation"],
+    "image": "images/nokware/set/Box3-768x768.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "gyyt6",
+    "name": "Nokware hand cream set",
+    "price": "₦16,000",
+    "brand": "Nokware",
+    "usage": "hand",
+    "category": "sets",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness"],
+    "image": "images/nokware/set/Setof4-Box-768x768.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "6gqwh",
+    "name": "Nokware her midi gift box",
+    "price": "₦24,000",
+    "brand": "Nokware",
+    "usage": "body",
+    "category": "sets",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/nokware/set/Box5-768x769.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "qwg6h",
+    "name": "Nokware mini shea butter box",
+    "price": "₦22,600",
+    "brand": "Nokware",
+    "usage": "body",
+    "category": "sets",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "dullness"],
+    "image": "images/nokware/set/GiftBoxSheas-768x768.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "h563w",
+    "name": "Arami evening routine set",
+    "price": "₦12,300",
+    "brand": "Arami",
+    "usage": "face",
+    "category": "sets",
+    "skinType": ["oily", "combination"],
+    "skinIssue": ["acne", "hyperpigmentation", "uneven skin texture"],
+    "image": "images/arami/set/PM-Routine-Set-scaled.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "lurws",
+    "name": "Arami coconut oil",
+    "price": "₦2,300",
+    "brand": "Arami",
+    "usage": "body",
+    "category": "oils",
+    "skinType": ["sensitive", "combination", "dry", "oily", "normal"],
+    "skinIssue": ["dryness", "hyperpigmentation", "dullness"],
+    "image": "images/arami/oils/Mini-Coco-Oil-Glow-Oil-1000x1000-1.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  },
+
+  {
+    "id": "lhfiy",
+    "name": "Arami purity face set",
+    "price": "₦7,000",
+    "brand": "Arami",
+    "usage": "face",
+    "category": "serum",
+    "skinType": ["oily", "combination"],
+    "skinIssue": [
+      "acne",
+      "hyperpigmentation",
+      "uneven skin texture",
+      "dullness"
+    ],
+    "image": "images/arami/Arami-Essentials-Edens-Elixir-1300x1300.jpg",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nulla quia, ut aperiam itaque, adipisci unde nihil quis quod vitae aut explicabo repellendus quisquam veritatis quas non pariatur quasi nobis soluta sunt culpa placeat, consequatur aliquid? Dolorum reprehenderit sapiente assumenda laborum placeat iure, inventore provident rerum quo. Amet, voluptatibus error."
+  }
+]

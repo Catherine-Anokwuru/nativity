@@ -1,0 +1,112 @@
+#reviews {
+  background-color: $white-color;
+  color: $black-color;
+  padding-top: 3rem;
+  overflow: hidden;
+padding-bottom: 1rem;
+font-family: $primary-font;
+
+  h3 {
+    padding-bottom: 2.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+
+  }
+  
+  .swiper4 {
+    position: relative;
+    .swiper-wrapper {
+      width: 82%;
+      
+
+      .swiper-slide {
+        background-color: $white-color;
+        padding: 1.5rem 1.5rem;
+        cursor: default;
+        font-size: 0.9rem;
+        border-radius: 1rem;
+        border: 2px solid rgba($black-color, 0.3);
+        transition: transform 1s ease;
+        &:hover {
+          transform: scale(1.04, 1.04);
+        }
+        p {
+          color: $black-color;
+          font-size: 0.7rem;
+          font-weight: 400;
+          padding: 0.5rem 1.8rem;
+          text-align: justify;
+        }
+        .star{
+          padding: 0 3.2rem;
+          color: gold;
+            
+          }
+          .star-1{
+            padding: 0 3.2rem;
+          color: gold;
+
+          #bx1{
+          color: rgba($black-color, 0.8);
+
+          }
+          }
+        .customer {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          img {
+            overflow: hidden;
+            width: 3.5rem;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+          }
+          h5 {
+            margin-bottom: 0.1rem;
+            font-size: 0.8rem;
+            padding-top: 0.2rem;
+          }
+          
+        }
+      }
+    }
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+      font-family: swiper-icons;
+      letter-spacing: 0;
+      font-variant: initial;
+      line-height: 1;
+    }
+  
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 32px;
+      letter-spacing: 0;
+      line-height: 1;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 30%;
+      width: 22px;
+      height: 64px;
+      margin-top: 22px;
+      z-index: 10;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba($black-color, 0.8);
+    }
+  }
+
+}
+
+/* ---------MEDIA QUERIES(SMALL DEVICES)--------- */
+@media screen and (max-width: 600px) {
+  .swiper-wrapper {
+    article {
+      padding-top: 1.5rem;
+    }
+  }
+}

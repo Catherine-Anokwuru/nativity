@@ -1,0 +1,124 @@
+#bs {
+  background-color: $white-color;
+  padding: 3rem 0;
+
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 2rem;
+
+    h3 {
+      font-family: $primary-font;
+      font-size: 1.8rem;
+
+      padding-bottom: 0.5rem;
+      text-align: center;
+      color: $primary-color;
+    }
+    .card1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .card {
+      transition: transform 1s ease;
+
+      p {
+        font-size: 1rem;
+        color: $primary-color;
+        font-family: $secondary-font;
+        line-height: 2rem;
+        text-align: justify;
+        // padding-right: 2rem;
+      }
+      .card-img {
+        img {
+          width: 100%;
+          height: 18rem;
+          // border: 2px solid $primary-color;
+          object-fit: cover;
+          object-position: center center;
+          border-top-right-radius: 2rem;
+          border-bottom-left-radius: 2rem;
+          &:hover {
+            transform: scale(1.04, 1.04);
+          }
+        }
+      }
+
+      // .card-text {
+      // border-top: 2px solid rgba($black-color, 0.2);
+      padding: 0.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      color: $black-color;
+
+      &:hover {
+        button {
+          display: inline-block;
+        }
+      }
+
+      h4 {
+        font-size: 1rem;
+        font-family: $primary-font;
+      }
+
+      // p {
+      //   font-family: $secondary-font;
+      //   font-size: 1rem;
+
+      //   text-align: center;
+      // }
+
+      button {
+        display: none;
+        span {
+          @include button;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #bs {
+    padding-bottom: 1rem;
+
+    .container {
+      margin-left: 9%;
+      margin-right: 9%;
+      padding-top: 1.5rem;
+      display: grid;
+      grid-template-columns: auto;
+      // gap: 2rem;
+
+      .card2,
+      .card4 {
+        padding-top: 0;
+      }
+      .card {
+        .card-img {
+          img {
+            width: 100%;
+            height: 20rem;
+            // border-top-right-radius: 1rem;
+            // border-top-left-radius: 1rem;
+            object-fit: cover;
+            object-position: center center;
+          }
+        }
+        .card-text {
+          button {
+            display: block;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
