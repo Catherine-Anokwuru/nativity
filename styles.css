@@ -609,7 +609,7 @@ nav .nav-container .white {
 }
 @media screen and (max-width: 600px) {
   #home #swiper1 .swiper-wrapper .swiper-slide img {
-    height: 40vh;
+    height: 50vh;
   }
   #home #swiper1 .swiper-wrapper .swiper-slide .logo {
     display: none;
@@ -622,7 +622,7 @@ nav .nav-container .white {
     top: 50%;
   }
   #home #swiper1 .swiper-wrapper .swiper-slide .shop {
-    top: 75%;
+    top: 70%;
     left: 1.5rem;
   }
   #home #swiper1 .swiper-wrapper .swiper-slide .shop p {
@@ -652,7 +652,7 @@ nav .nav-container .white {
     padding: 0.8rem;
   }
   #home #swiper1 .swiper-wrapper .swiper-slide .shop2 {
-    top: 80%;
+    top: 75%;
     right: 1.5rem;
   }
   #home #swiper1 .swiper-wrapper .swiper-slide .shop2 p {
@@ -752,18 +752,21 @@ nav .nav-container .white {
   }
 }
 @media screen and (max-width: 600px) {
+  #about-us {
+    margin: 0 2%;
+  }
   #about-us .about .about-title h3 {
     font-size: 1.6rem;
   }
   #about-us .about .btn-container {
     border-bottom: 2px solid rgba(96, 40, 20, 0.2);
     margin: 0 auto;
-    width: 18.5rem;
+    width: 15.5rem;
     justify-content: center;
   }
   #about-us .about .btn-container .tab-btn {
-    width: 6rem;
-    font-size: 1.2rem;
+    width: 5rem;
+    font-size: 1rem;
     padding: 0.5rem 0.5rem;
   }
   #about-us .about .btn-container .active {
@@ -785,7 +788,7 @@ nav .nav-container .white {
 }
 #services .container {
   position: relative;
-  background-image: url(/images/arami/Arami-Edens-Elixir-Refill-pouch-and-Empty-Glass-Bottle-scaled.jpeg);
+  background-image: url(../images/arami/Arami-Edens-Elixir-Refill-pouch-and-Empty-Glass-Bottle-scaled.jpeg);
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;

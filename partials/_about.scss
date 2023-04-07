@@ -89,6 +89,8 @@
 
 @media screen and (max-width: 600px) {
   #about-us {
+    margin: 0 2%;
+
     .about {
       .about-title {
         h3 {
@@ -98,12 +100,12 @@
       .btn-container {
         border-bottom: 2px solid rgba($black-color, 0.2);
         margin: 0 auto;
-        width: 18.5rem;
+        width: 15.5rem;
         justify-content: center;
 
         .tab-btn {
-          width: 6rem;
-          font-size: 1.2rem;
+          width: 5rem;
+          font-size: 1rem;
           padding: 0.5rem 0.5rem;
         }
         .active {

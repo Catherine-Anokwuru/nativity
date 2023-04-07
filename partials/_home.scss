@@ -239,7 +239,7 @@
       .swiper-wrapper {
         .swiper-slide {
           img {
-            height: 40vh;
+            height: 50vh;
           }
           .logo {
             display: none;
@@ -253,7 +253,7 @@
           }
 
           .shop {
-            top: 75%;
+            top: 70%;
             left: 1.5rem;
             p {
               @include button;
@@ -273,7 +273,7 @@
           }
 
           .shop2 {
-            top: 80%;
+            top: 75%;
             right: 1.5rem;
             p {
               @include button;
