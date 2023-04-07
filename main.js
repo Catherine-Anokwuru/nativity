@@ -4,7 +4,7 @@ new Swiper("#swiper1", {
   direction: "horizontal",
   loop: true,
   autoplay: {
-    delay: 4000,
+    delay: 7000,
     disableOnInteraction: false,
   },
   lazyLoading: true,
@@ -20,7 +20,9 @@ const modal = document.querySelector(".modal");
 const close = document.querySelector(".close-modal span");
 
 document.addEventListener("DOMContentLoaded", function () {
-  modal.classList.add("show-modal");
+  setTimeout(() => {
+    modal.classList.add("show-modal");
+  }, 4000);
 });
 
 close.addEventListener("click", function () {

@@ -1,10 +1,8 @@
-
 #about-us {
   margin: 0 9%;
   padding: 3rem 0;
-  z-index: 3;
+
   .about {
-    
     .about-title {
       h3 {
         font-family: $primary-font;
@@ -13,14 +11,13 @@
         text-align: center;
         color: $primary-color;
       }
-    
     }
 
     .btn-container {
       border-bottom: 2px solid rgba($black-color, 0.2);
-      margin:  auto;
+      margin: auto;
       width: 25rem;
-     justify-content: center;
+      justify-content: center;
 
       .tab-btn {
         width: 8.15rem;
@@ -48,7 +45,6 @@
         display: none;
         .about-img {
           width: 100%;
-       
 
           img {
             width: 100%;
@@ -72,11 +68,59 @@
         gap: 6rem;
         overflow: hidden;
         color: $primary-color;
-        
       }
     }
-    // .about-us-img {
+  }
+}
 
-    // }
+@media screen and (max-width: 1024px) {
+  #about-us {
+    .about {
+      .about-content {
+        .active {
+          font-size: 1rem;
+          grid-template-columns: 40% 60%;
+          gap: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about-us {
+    .about {
+      .about-title {
+        h3 {
+          font-size: 1.6rem;
+        }
+      }
+      .btn-container {
+        border-bottom: 2px solid rgba($black-color, 0.2);
+        margin: 0 auto;
+        width: 18.5rem;
+        justify-content: center;
+
+        .tab-btn {
+          width: 6rem;
+          font-size: 1.2rem;
+          padding: 0.5rem 0.5rem;
+        }
+        .active {
+          background-color: $primary-color;
+          color: $white-color;
+        }
+      }
+      .about-content {
+        padding-top: 1rem;
+
+        .active {
+          line-height: 1.6rem;
+
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+    }
   }
 }

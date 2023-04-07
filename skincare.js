@@ -52,10 +52,16 @@ const setSearch = (store) => {
       const newProducts = store.filter((product) => {
         let { name } = product;
         // console.log(name);
-        name = name.toLowerCase();
+        // name = name.toLowerCase();
         if (name.includes(value)) {
           return product;
           // console.log(product);
+        }
+        if (name.toLowerCase().includes(value)) {
+          return product;
+        }
+        if (name.toUpperCase().includes(value)) {
+          return product;
         }
       });
       // console.log(newProducts);
