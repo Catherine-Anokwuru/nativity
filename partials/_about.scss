@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 600px) {
   #about-us {
-    margin: 0 2%;
+    margin: 0 3%;
 
     .about {
       .about-title {
@@ -99,12 +99,12 @@
       }
       .btn-container {
         border-bottom: 2px solid rgba($black-color, 0.2);
-        margin: 0;
-        width: 16rem;
-      Justify-content:start;
-
+        margin: 0 auto;
+        width: 100%;
+      
+overflow: hidden;
         .tab-btn {
-          width: 5rem;
+          width: 30%;
           font-size: 0.9rem;
           padding: 0.5rem 0.5rem;
         }
