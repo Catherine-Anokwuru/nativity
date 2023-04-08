@@ -753,7 +753,7 @@ nav .nav-container .white {
 }
 @media screen and (max-width: 600px) {
   #about-us {
-    margin: 0 2%;
+    margin: 0 3%;
   }
   #about-us .about .about-title h3 {
     font-size: 1.5rem;
@@ -761,11 +761,12 @@ nav .nav-container .white {
   #about-us .about .btn-container {
     border-bottom: 2px solid rgba(96, 40, 20, 0.2);
     margin: 0 auto;
-    width: 12.5rem;
+    width: 15.5rem;
+    justify-content: center;
   }
   #about-us .about .btn-container .tab-btn {
-    width: 4rem;
-    font-size: 0.9rem;
+    width: 5rem;
+    font-size: 1rem;
     padding: 0.5rem 0.5rem;
   }
   #about-us .about .btn-container .active {
@@ -788,7 +789,7 @@ nav .nav-container .white {
 }
 #services .container {
   position: relative;
-  background-image: url(./../images/arami/Arami-Edens-Elixir-Refill-pouch-and-Empty-Glass-Bottle-scaled.jpeg);
+  background-image: url(../images/arami/Arami-Edens-Elixir-Refill-pouch-and-Empty-Glass-Bottle-scaled.jpeg);
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
