@@ -793,7 +793,7 @@ nav .nav-container .white {
 #services .container {
   position: relative;
   background-image: url(../images/arami/Arami-Edens-Elixir-Refill-pouch-and-Empty-Glass-Bottle-scaled.jpeg);
-  width: 100vw;
+  height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
