@@ -1,5 +1,6 @@
 const productDOM = document.querySelector(".ctn");
 const url = "skincare.json";
+import { formatPrice } from "./utils.js";
 
 //FETCHING THE PRODUCTS
 const fetchProducts = async () => {
@@ -20,10 +21,9 @@ const fetchProducts = async () => {
 const displayProducts = (list) => {
   const productList = list
     .map((product) => {
-      //id, name, image, price
       const { id, name: title, price, image: img } = product;
-      //   const image = img[0];
       // console.log(id);
+
       return `<a class="single-product" href="single.html?id=${id}">
     <div id="swiper-slide" class="card p-card">
         <div class="card-img c-image">
@@ -31,7 +31,7 @@ const displayProducts = (list) => {
         </div>
         <div class="card-text">
         <h4>${title}</h4>
-        <p>${price}</p>
+        <p>${formatPrice(price)}</p>
         <button class="add-to-cart"><span>ADD TO CART</span></button>
         </div>
     </div>
@@ -107,6 +107,7 @@ const setSkinIssue = (list) => {
     // console.log(element);
     const newItem = list.filter(function (products) {
       let { skinIssue } = products;
+      // console.log(skinIssue);
       const trial = skinIssue.values();
       for (const letter of trial) {
         if (element === letter) {
@@ -121,6 +122,41 @@ const setSkinIssue = (list) => {
   });
 };
 
+// PRICE FILTER
+const priceFilter = (item) => {
+  const high = document.querySelector(".high");
+  high.addEventListener("click", function (event) {
+    const element = event.currentTarget;
+    // console.log(element);
+    if (element) {
+      const newItem = item.filter(function (products) {
+        let { price } = products;
+        // console.log(price);
+        price.sort(function (a, b) {
+          return a - b;
+        });
+        console.log(a - b);
+      });
+    }
+
+    // const points = [40, 100, 1, 5, 25, 10];
+    // points.sort(function (a, b) {
+    //   return a - b;
+    // });
+
+    // const trial = skinIssue.values();
+    // for (const letter of trial) {
+    //   if (element === letter) {
+    //     return products;
+    //   }
+    // }
+    // if (element === "all") {
+    //   return products;
+    // }
+    displayProducts(newItem, productDOM);
+  });
+};
+
 //CALLING IT
 const start = async () => {
   const data = await fetchProducts();
@@ -128,6 +164,7 @@ const start = async () => {
   setSkinIssue(data);
   displayProducts(data);
   setSearch(data);
+  priceFilter(data);
 };
 
 //PAGINATION
@@ -195,11 +232,4 @@ start();
 
 // window.addEventListener("load", init);
 
-export {
-  fetchProducts,
-  displayProducts,
-  setSearch,
-  setSkinIssue,
-  setSkinType,
-  start,
-};
+export { fetchProducts, displayProducts, setSearch, setSkinIssue, setSkinType, start };

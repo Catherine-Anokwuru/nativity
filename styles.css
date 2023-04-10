@@ -819,7 +819,7 @@ nav .nav-container .white {
 }
 #services .container .serve-text {
   position: absolute;
-  top: 8%;
+  top: 6%;
   right: 5%;
   padding: 0.5rem 0;
   text-align: center;
@@ -839,7 +839,7 @@ nav .nav-container .white {
 #services .container .serve-text .txt p {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
   text-align: justify;
   margin-bottom: 0.8rem;
   margin-left: 1.6rem;
@@ -847,9 +847,15 @@ nav .nav-container .white {
 }
 
 @media screen and (max-width: 1024px) {
+  #services .container {
+    position: static;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   #services .container .layer {
-    height: 100%;
-    padding: 3rem 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem 0;
   }
   #services .container .layer .headtext {
     font-size: 1.5rem;
@@ -864,7 +870,7 @@ nav .nav-container .white {
     height: 100%;
   }
   #services .container .serve-text .txt {
-    padding: 0.5rem 2rem;
+    padding: 0.2rem 2rem;
     color: #602814;
   }
   #services .container .serve-text .txt p {
@@ -884,11 +890,11 @@ nav .nav-container .white {
   color: #602814;
   padding-top: 3rem;
   overflow: hidden;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   font-family: "Playfair Display", serif;
 }
 #reviews h3 {
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
   text-align: center;
   font-size: 1.8rem;
 }
@@ -1039,15 +1045,6 @@ nav .nav-container .white {
 }
 #bs .container .card:hover button {
   display: inline-block;
-}
-#bs .container .card h4 {
-  font-size: 1rem;
-  font-family: "Playfair Display", serif;
-}
-#bs .container .card button {
-  display: none;
-}
-#bs .container .card button span {
   display: inline-block;
   width: 100%;
   padding: 0.5rem 0.7rem;
@@ -1058,21 +1055,29 @@ nav .nav-container .white {
   transition: all 400ms ease;
   font-size: 0.8rem;
   box-shadow: none;
+  width: 40%;
 }
-#bs .container .card button span:hover {
+#bs .container .card:hover button:hover {
   background: #602814;
   color: #fffffe;
   font-size: 0.9rem;
 }
+#bs .container .card h4 {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+}
+#bs .container .card button {
+  display: none;
+}
 
 @media screen and (max-width: 1024px) {
   #bs {
-    padding-bottom: 1rem;
+    padding: 3rem 0;
   }
   #bs .container {
     margin-left: 2rem;
     margin-right: 2rem;
-    padding-top: 1.5rem;
+    padding-top: 0;
     grid-template-columns: 1fr;
     grid-template-areas: "card2" "card3" "card6" "card7";
   }
@@ -1092,9 +1097,27 @@ nav .nav-container .white {
     grid-area: card7;
   }
   #bs .container .card .card-text button {
-    margin-top: 1rem;
-    display: block;
+    margin-top: 1.5rem;
     margin: auto;
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    background: #602814;
+    color: #fffffe;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: 0.8rem;
+    box-shadow: none;
+    width: 40%;
+  }
+  #bs .container .card .card-text button:hover {
+    background: #602814;
+    color: #fffffe;
+    font-size: 0.9rem;
+  }
+  #bs .container .card:hover button {
+    display: inline-block;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1355,10 +1378,12 @@ nav .nav-container .white {
   padding-bottom: 1rem;
   color: #292828;
   display: block;
+  cursor: pointer;
 }
 #sk .entire-container .filters .con button {
   display: block;
   line-height: 2rem;
+  cursor: pointer;
 }
 #sk .entire-container .filters .con h4 {
   font-family: "Playfair Display", serif;
@@ -1469,24 +1494,17 @@ nav .nav-container .white {
   #sk .entire-container .filters .con {
     display: block;
   }
-  #sk .entire-container .filters .con .filter-text {
-    cursor: pointer;
-  }
-  #sk .entire-container .filters .con .dropdown {
+  #sk .entire-container .filters .con article {
     display: none;
   }
-  #sk .entire-container .filters .con .dropdown article {
+  #sk .entire-container .filters .con article button {
+    text-align: start;
+  }
+  #sk .entire-container .filters .con .show-filter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
     cursor: pointer;
-  }
-  #sk .entire-container .filters .con .dropdown article button {
-    text-align: start;
-  }
-  #sk .entire-container .filters .con .show-filter {
-    display: flex;
-    justify-content: space-between;
   }
   #sk .entire-container #swiper5 {
     padding-top: 1rem;
@@ -1534,6 +1552,9 @@ nav .nav-container .white {
   }
 }
 @media screen and (max-width: 600px) {
+  #sk .entire-container {
+    padding: 1rem;
+  }
   #sk .entire-container .filters .search-input {
     width: 15rem;
   }
@@ -1579,6 +1600,7 @@ nav .nav-container .white {
     box-shadow: none;
     font-size: 0.7rem;
     padding: 0.5rem 0.5rem;
+    width: 7rem;
   }
   #sk .entire-container #swiper5 a .p-card .card-text button:hover {
     background: #602814;
@@ -1828,6 +1850,9 @@ nav .nav-container .white {
 #faq .faq-container .questions .question-title .question-btn .minus {
   display: none;
 }
+#faq .faq-container .questions .question-title .question-btn .display-btns {
+  display: inline-block;
+}
 #faq .faq-container .questions .question-answer {
   font-family: "Lato", sans-serif;
   color: #602814;
@@ -1835,8 +1860,7 @@ nav .nav-container .white {
   display: none;
   border-top: 2px solid rgba(96, 40, 20, 0.5);
 }
-
-.display-btns {
+#faq .faq-container .questions .display-btns {
   display: block;
 }
 

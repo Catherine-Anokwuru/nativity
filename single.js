@@ -1,5 +1,6 @@
 const productsDOM = document.querySelector("#sp");
 const url = "skincare.json";
+import { formatPrice } from "./utils.js";
 
 const fetchProduct = async () => {
   try {
@@ -24,16 +25,16 @@ const displayProduct = (list) => {
     if (products.id === ids) {
       document.title = title;
       productsDOM.innerHTML = `<div class="single-ctn">
-<div class="single-image">
-  <img
-    src="${img}"
-    alt="${title}"
-  />
-</div>
-<div class="single-text">
-  <h1>${title}</h1>
-  <h4>${brand}</h4>
-  <p>₦${price}</p>
+    <div class="single-image">
+      <img
+      src="${img}"
+      alt="${title}"
+      />
+    </div>
+    <div class="single-text">
+      <h1>${title}</h1>
+      <h4>${brand}</h4>
+      <p>${formatPrice(price)}</p>
   <p>
     ${description}
   </p>

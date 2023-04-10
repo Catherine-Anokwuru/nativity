@@ -38,11 +38,12 @@
 
     .about-content {
       padding-top: 2rem;
-
       text-align: justify;
       display: block;
+
       .about-text {
         display: none;
+
         .about-img {
           width: 100%;
 
@@ -54,12 +55,8 @@
             overflow: hidden;
           }
         }
-        // .active{
-        //   display: block;
-        // }
       }
       .active {
-        // display: block;
         line-height: 2rem;
         font-family: $secondary-font;
         font-size: 1.1rem;

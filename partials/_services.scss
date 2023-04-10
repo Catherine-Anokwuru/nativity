@@ -35,17 +35,12 @@
 
     .serve-text {
       position: absolute;
-      top: 8%;
+      top: 6%;
       right: 5%;
-      // display: grid;
-      // grid-template-columns: repeat(4, auto);
-      // gap: 2rem;
       padding: 0.5rem 0;
       text-align: center;
-      // margin: auto;
       font-size: 1.1rem;
       height: 100vh;
-      // border: 2px solid black;
 
       .txt {
         padding: 0.5rem 2rem;
@@ -61,7 +56,7 @@
         p {
           font-family: $secondary-font;
           font-size: 1rem;
-          line-height: 1.5rem;
+          line-height: 2rem;
           text-align: justify;
           margin-bottom: 0.8rem;
           margin-left: 1.6rem;
@@ -75,9 +70,12 @@
 @media screen and (max-width: 1024px) {
   #services {
     .container {
+      position: static;
+      height: fit-content;
+
       .layer {
-        height: 100%;
-        padding: 3rem 0;
+        height: fit-content;
+        padding: 2rem 0;
 
         .headtext {
           font-size: 1.5rem;
@@ -92,9 +90,8 @@
       .serve-text {
         position: static;
         height: 100%;
-
         .txt {
-          padding: 0.5rem 2rem;
+          padding: 0.2rem 2rem;
           color: $primary-color;
 
           p {

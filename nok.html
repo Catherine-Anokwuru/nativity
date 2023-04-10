@@ -6,22 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>All skincare</title>
     <!-- MINIFIED CSS -->
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- BOXICON ICONS -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <!-- SWIPER JS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- GOOGLE ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
 
   <body>
@@ -84,10 +75,7 @@
     <!-- END OF NAVIGATION BAR -->
 
     <!-- HEAD SECTION -->
-    <section
-      id="face-header"
-      style="background-image: url(images/nokware/set/Box3-768x768.jpg)"
-    >
+    <section id="face-header" style="background-image: url(images/nokware/set/Box3-768x768.jpg)">
       <div class="layer"></div>
       <div class="face-main-text">
         <h3>Nokware.</h3>
@@ -105,58 +93,41 @@
 
           <!-- SKIN TYPE -->
           <div class="con skin-type-container">
-            <h4 class="filter-text">
-              Filter by skin type<i class="bx bx-chevron-down"></i>
-            </h4>
-            <aside class="dropdown">
-              <article class="skin-types">
-                <button class="skin-filter skin-type">All</button>
-                <button class="skin-filter skin-type">Sensitive</button>
+            <h4 class="dropdown">Filter by skin type<i class="bx bx-chevron-down"></i></h4>
+            <article class="skin-types each-filter">
+              <button class="skin-filter skin-type">All</button>
+              <button class="skin-filter skin-type">Sensitive</button>
+              <button class="skin-filter skin-type" data-id="oily">Oily</button>
+              <button class="skin-filter skin-type">Combination</button>
 
-                <button class="skin-filter skin-type" data-id="oily">
-                  Oily
-                </button>
-                <button class="skin-filter skin-type">Combination</button>
-
-                <button class="skin-filter skin-type">Normal</button>
-                <button class="skin-filter skin-type" data-id="dry">Dry</button>
-              </article>
-            </aside>
+              <button class="skin-filter skin-type">Normal</button>
+              <button class="skin-filter skin-type" data-id="dry">Dry</button>
+            </article>
           </div>
+
           <!-- SKIN ISSUE -->
           <div class="con skin-issue-container">
-            <h4 class="filter-text">
-              Filter by skin issue<i class="bx bx-chevron-down"></i>
-            </h4>
-            <aside class="dropdown">
-              <article class="skin">
+            <h4 class="dropdown">Filter by skin issue<i class="bx bx-chevron-down"></i></h4>
+            <aside>
+              <article class="skin each-filter">
                 <button class="skin-filter skin-issue">All</button>
                 <button class="skin-filter skin-issue">Acne</button>
-                <button class="skin-filter skin-issue">
-                  Hyperpigmentation
-                </button>
-
+                <button class="skin-filter skin-issue">Hyperpigmentation</button>
+                <button class="skin-filter skin-issue">Uneven skin texture</button>
                 <button class="skin-filter skin-issue">Dryness</button>
-                <button class="skin-filter skin-issue">
-                  Uneven skin texture
-                </button>
                 <button class="skin-filter skin-issue">Dullness</button>
               </article>
             </aside>
-            <!-- </div> -->
-
-            <!-- price -->
           </div>
+
+          <!-- PRICE FILTER -->
           <div class="con">
-            <h4 class="filter-text">
-              Filter by price<i class="bx bx-chevron-down"></i>
-            </h4>
-            <aside class="dropdown">
-              <article class="price-filter">
-                <button class="skin-filter price">Lowest to highest</button>
-                <button class="skin-filter price">Highest to lowest</button>
-              </article>
-            </aside>
+            <h4 class="dropdown">Filter by price<i class="bx bx-chevron-down"></i></h4>
+            <article class="price-filter each-filter">
+              <button class="skin-filter price">Lowest to highest</button>
+              <button class="skin-filter price">Highest to lowest</button>
+            </article>
+
             <!-- <form class="price-form">
                 <h4>Filter by price</h4>
 
@@ -183,15 +154,9 @@
       <div class="container">
         <article>
           <a href="#" class="footer_logo">
-            <h3>
-              <span class="material-symbols-outlined"> south_america </span
-              >Nativity
-            </h3>
+            <h3><span class="material-symbols-outlined"> south_america </span>Nativity</h3>
           </a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur elit, Laudantium, lorem
-            fadii.
-          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur elit, Laudantium, lorem fadii.</p>
           <div>
             <i class="bx bx-phone"></i>
             <small>+23466677788</small>
@@ -245,5 +210,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <!-- <script src="main.js"></script> -->
     <script type="module" src="nok.js"></script>
+    <script type="module" src="utils.js"></script>
   </body>
 </html>

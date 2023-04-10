@@ -43,6 +43,9 @@
           .minus {
             display: none;
           }
+          .display-btns {
+            display: inline-block;
+          }
         }
       }
       .question-answer {
@@ -52,11 +55,11 @@
         display: none;
         border-top: 2px solid rgba($primary-color, 0.5);
       }
+      .display-btns {
+        display: block;
+      }
     }
   }
-}
-.display-btns {
-  display: block;
 }
 
 .unshow {

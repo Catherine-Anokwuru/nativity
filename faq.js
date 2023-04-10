@@ -9,10 +9,9 @@ qBtn.forEach((btn) => {
       const faqText = question.querySelector(".question-answer");
       const minus = question.querySelector(".minus");
       const plus = question.querySelector(".plus");
-
       minus.classList.toggle("display-btns");
-      faqText.classList.toggle("display-btns");
       plus.classList.toggle("unshow");
+      faqText.classList.toggle("display-btns");
     }
   });
 });

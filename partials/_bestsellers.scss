@@ -25,7 +25,10 @@
     }
     .card {
       transition: transform 1s ease;
-
+      padding: 0.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      color: $black-color;
       p {
         font-size: 1rem;
         color: $primary-color;
@@ -48,14 +51,11 @@
         }
       }
 
-      padding: 0.5rem;
-      line-height: 1.5rem;
-      text-align: center;
-      color: $black-color;
-
       &:hover {
         button {
           display: inline-block;
+          @include button;
+          width: 40%;
         }
       }
 
@@ -66,9 +66,6 @@
 
       button {
         display: none;
-        span {
-          @include button;
-        }
       }
     }
   }
@@ -76,12 +73,12 @@
 
 @media screen and (max-width: 1024px) {
   #bs {
-    padding-bottom: 1rem;
+    padding: 3rem 0;
 
     .container {
       margin-left: 2rem;
       margin-right: 2rem;
-      padding-top: 1.5rem;
+      padding-top: 0;
       grid-template-columns: 1fr;
       grid-template-areas:
         "card2"
@@ -112,9 +109,15 @@
       .card {
         .card-text {
           button {
-            margin-top: 1rem;
-            display: block;
+            margin-top: 1.5rem;
             margin: auto;
+            @include button;
+            width: 40%;
+          }
+        }
+        &:hover {
+          button {
+            display: inline-block;
           }
         }
       }

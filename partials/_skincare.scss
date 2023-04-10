@@ -57,10 +57,12 @@
         padding-bottom: 1rem;
         color: $dark-color;
         display: block;
+        cursor: pointer;
 
         button {
           display: block;
           line-height: 2rem;
+          cursor: pointer;
         }
 
         h4 {
@@ -76,9 +78,6 @@
           background-color: $white-color;
         }
       }
-      // .price-form {
-      //   padding-top: 1rem;
-      // }
     }
 
     #swiper5 {
@@ -169,6 +168,7 @@
     }
   }
 }
+
 @media screen and (max-width: 1024px) {
   #sk {
     .entire-container {
@@ -182,25 +182,18 @@
 
         .con {
           display: block;
-          .filter-text {
-            cursor: pointer;
-          }
-          .dropdown {
-            display: none;
-            article {
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              gap: 0.5rem;
 
-              cursor: pointer;
-              button {
-                text-align: start;
-              }
+          article {
+            display: none;
+            button {
+              text-align: start;
             }
           }
           .show-filter {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            cursor: pointer;
           }
         }
       }
@@ -251,6 +244,7 @@
 @media screen and (max-width: 600px) {
   #sk {
     .entire-container {
+      padding: 1rem;
       .filters {
         .search-input {
           width: 15rem;
@@ -297,6 +291,7 @@
                 @include button;
                 font-size: 0.7rem;
                 padding: 0.5rem 0.5rem;
+                width: 7rem;
                 &:hover {
                   font-size: 0.7rem;
                 }

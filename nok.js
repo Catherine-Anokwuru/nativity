@@ -1,17 +1,5 @@
 import { fetchProducts } from "./skincare.js";
 import { displayProducts } from "./skincare.js";
-const dropDown = document.querySelectorAll(".filter-text");
-
-dropDown.forEach(function (event) {
-  event.addEventListener("click", function (e) {
-    const question = e.target.parentElement;
-    // console.log(question);
-    if (question) {
-      const showDropDown = question.querySelector(".dropdown");
-      showDropDown.classList.toggle("show-filter");
-    }
-  });
-});
 
 //DISPLAY NOKWARE PRODUCTS
 const productDOM = document.querySelector(".ctn");
@@ -79,7 +67,7 @@ const setSkinType = (list) => {
           if (element === letter) {
             return products;
           }
-          if (element === "all") {
+          if (element == "all") {
             return products;
           }
         }
@@ -101,10 +89,10 @@ const setSkinIssue = (list) => {
       const trial = skinIssue.values();
       for (const letter of trial) {
         if (brand === "Nokware") {
-          if (element === letter) {
+          if (element == letter) {
             return products;
           }
-          if (element === "all") {
+          if (element == "all") {
             return products;
           }
         }
