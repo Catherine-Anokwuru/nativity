@@ -4,9 +4,9 @@
 
   .container {
     position: relative;
-    background-image: url(images/arami/Arami-Edens-Elixir-Refill-pouch-and-Empty-Glass-Bottle-scaled.jpeg);
-    height: 100vh;
-    // width: 100vw;
+    background-image: url(../images/arami/Arami-Edens-Elixir-Refill-pouch-and-Empty-Glass-Bottle-scaled.jpeg);
+    // height: 100;
+    width: 100vw;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,7 +20,6 @@
       .headtext {
         font-family: $primary-font;
         font-size: 2.5rem;
-        padding-bottom: 1rem;
         text-align: center;
         margin: 0 auto;
         position: absolute;
@@ -68,6 +67,53 @@
           margin-left: 1.6rem;
           width: 38rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #services {
+    .container {
+      .layer {
+        height: 100%;
+        padding: 3rem 0;
+
+        .headtext {
+          font-size: 1.5rem;
+          width: 100%;
+          padding: 0;
+          background-color: transparent;
+          color: $primary-color;
+          position: static;
+        }
+      }
+
+      .serve-text {
+        position: static;
+        height: 100%;
+
+        .txt {
+          padding: 0.5rem 2rem;
+          color: $primary-color;
+
+          p {
+            font-size: 1rem;
+            margin-left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #services {
+    .container {
+      .layer {
+        padding: 2rem 0;
+        background-color: rgba($white-color, 0.5);
       }
     }
   }

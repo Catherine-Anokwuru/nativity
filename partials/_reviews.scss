@@ -3,21 +3,19 @@
   color: $black-color;
   padding-top: 3rem;
   overflow: hidden;
-padding-bottom: 1rem;
-font-family: $primary-font;
+  padding-bottom: 1rem;
+  font-family: $primary-font;
 
   h3 {
     padding-bottom: 2.5rem;
     text-align: center;
     font-size: 1.8rem;
-
   }
-  
+
   .swiper4 {
     position: relative;
     .swiper-wrapper {
       width: 82%;
-      
 
       .swiper-slide {
         background-color: $white-color;
@@ -37,20 +35,18 @@ font-family: $primary-font;
           padding: 0.5rem 1.8rem;
           text-align: justify;
         }
-        .star{
+        .star {
           padding: 0 3.2rem;
           color: gold;
-            
-          }
-          .star-1{
-            padding: 0 3.2rem;
+        }
+        .star-1 {
+          padding: 0 3.2rem;
           color: gold;
 
-          #bx1{
-          color: rgba($black-color, 0.8);
-
+          #bx1 {
+            color: rgba($black-color, 0.8);
           }
-          }
+        }
         .customer {
           display: flex;
           align-items: center;
@@ -66,7 +62,6 @@ font-family: $primary-font;
             font-size: 0.8rem;
             padding-top: 0.2rem;
           }
-          
         }
       }
     }
@@ -77,7 +72,7 @@ font-family: $primary-font;
       font-variant: initial;
       line-height: 1;
     }
-  
+
     .swiper-button-next:after,
     .swiper-button-prev:after {
       font-size: 32px;
@@ -99,14 +94,19 @@ font-family: $primary-font;
       color: rgba($black-color, 0.8);
     }
   }
-
 }
 
 /* ---------MEDIA QUERIES(SMALL DEVICES)--------- */
 @media screen and (max-width: 600px) {
-  .swiper-wrapper {
-    article {
-      padding-top: 1.5rem;
+  #reviews {
+    padding-top: 2rem;
+
+    .swiper4 {
+      margin: 0 1rem;
+
+      .swiper-wrapper {
+        width: 100%;
+      }
     }
   }
 }

@@ -58,5 +58,37 @@
 @media screen and (max-width: 1024px) {
   #promo {
     grid-template-columns: auto;
+    margin: 0 1rem;
+
+    .promo-img {
+      img {
+        height: 17rem;
+      }
+    }
+    .promo-text {
+      h3 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+
+      .promo-countdown {
+        .countdown {
+          background-color: $primary-color;
+          color: $white-color;
+          margin-top: 0.8rem;
+          text-align: center;
+          padding: 0.5rem;
+          border: 4px solid $white-color;
+          width: 100%;
+        }
+        .promo-end-text {
+          font-family: $secondary-font;
+          font-weight: 400;
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }

@@ -759,13 +759,16 @@ nav .nav-container .white {
     font-size: 1.5rem;
   }
   #about-us .about .btn-container {
-    border-bottom: 2px solid rgba(96, 40, 20, 0.2);
+    border-bottom: none;
     margin: 0 auto;
-    width: 15.5rem;
+    width: 100%;
+    display: inline-flex;
     justify-content: center;
   }
   #about-us .about .btn-container .tab-btn {
-    width: 5rem;
+    border-bottom: 2px solid rgba(96, 40, 20, 0.2);
+    margin-right: 0.3rem;
+    width: auto;
     font-size: 1rem;
     padding: 0.5rem 0.5rem;
   }
@@ -790,7 +793,7 @@ nav .nav-container .white {
 #services .container {
   position: relative;
   background-image: url(../images/arami/Arami-Edens-Elixir-Refill-pouch-and-Empty-Glass-Bottle-scaled.jpeg);
-  height: 100vh;
+  width: 100vw;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -803,7 +806,6 @@ nav .nav-container .white {
 #services .container .layer .headtext {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
-  padding-bottom: 1rem;
   text-align: center;
   margin: 0 auto;
   position: absolute;
@@ -844,6 +846,39 @@ nav .nav-container .white {
   width: 38rem;
 }
 
+@media screen and (max-width: 1024px) {
+  #services .container .layer {
+    height: 100%;
+    padding: 3rem 0;
+  }
+  #services .container .layer .headtext {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    color: #602814;
+    position: static;
+  }
+  #services .container .serve-text {
+    position: static;
+    height: 100%;
+  }
+  #services .container .serve-text .txt {
+    padding: 0.5rem 2rem;
+    color: #602814;
+  }
+  #services .container .serve-text .txt p {
+    font-size: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #services .container .layer {
+    padding: 2rem 0;
+    background-color: rgba(255, 255, 254, 0.5);
+  }
+}
 #reviews {
   background-color: #fffffe;
   color: #602814;
@@ -939,8 +974,14 @@ nav .nav-container .white {
 
 /* ---------MEDIA QUERIES(SMALL DEVICES)--------- */
 @media screen and (max-width: 600px) {
-  .swiper-wrapper article {
-    padding-top: 1.5rem;
+  #reviews {
+    padding-top: 2rem;
+  }
+  #reviews .swiper4 {
+    margin: 0 1rem;
+  }
+  #reviews .swiper4 .swiper-wrapper {
+    width: 100%;
   }
 }
 #bs {
@@ -1029,27 +1070,51 @@ nav .nav-container .white {
     padding-bottom: 1rem;
   }
   #bs .container {
-    margin-left: 9%;
-    margin-right: 9%;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding-top: 1.5rem;
-    display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "card2" "card3" "card6" "card7";
   }
-  #bs .container .card2,
-  #bs .container .card4 {
-    padding-top: 0;
+  #bs .container h3 {
+    font-size: 1.5rem;
   }
-  #bs .container .card .card-img img {
-    width: 100%;
-    height: 20rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center center;
-       object-position: center center;
+  #bs .container .card2 {
+    grid-area: card2;
+  }
+  #bs .container .card3 {
+    grid-area: card3;
+  }
+  #bs .container .card6 {
+    grid-area: card6;
+  }
+  #bs .container .card7 {
+    grid-area: card7;
   }
   #bs .container .card .card-text button {
+    margin-top: 1rem;
     display: block;
     margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  #bs {
+    padding: 2rem 0;
+  }
+  #bs .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0;
+    row-gap: 1rem;
+  }
+  #bs .container h3 {
+    padding-bottom: 1rem;
+  }
+  #bs .container .card1 {
+    grid-template-columns: 1fr;
+  }
+  #bs .container .card .card-text button {
+    margin-top: 0.5rem;
   }
 }
 #maq {
@@ -1201,6 +1266,11 @@ nav .nav-container .white {
     padding-bottom: 2rem;
     gap: 0;
   }
+  #footer .container .sign input {
+    width: 80%;
+    font-size: 1rem;
+    margin: auto;
+  }
   #footer .container article {
     padding: 3rem 1rem 0;
     gap: 1rem;
@@ -1221,6 +1291,13 @@ nav .nav-container .white {
   }
   #footer .copyright {
     font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #footer .container .sign input {
+    width: 100%;
+    font-size: 1rem;
+    margin: auto;
   }
 }
 #nav {
@@ -1664,6 +1741,30 @@ nav .nav-container .white {
 @media screen and (max-width: 1024px) {
   #promo {
     grid-template-columns: auto;
+    margin: 0 1rem;
+  }
+  #promo .promo-img img {
+    height: 17rem;
+  }
+  #promo .promo-text h3 {
+    font-size: 1.3rem;
+  }
+  #promo .promo-text p {
+    font-size: 1rem;
+  }
+  #promo .promo-text .promo-countdown .countdown {
+    background-color: #602814;
+    color: #fffffe;
+    margin-top: 0.8rem;
+    text-align: center;
+    padding: 0.5rem;
+    border: 4px solid #fffffe;
+    width: 100%;
+  }
+  #promo .promo-text .promo-countdown .promo-end-text {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
   }
 }
 .face-main-text {
@@ -1674,13 +1775,20 @@ nav .nav-container .white {
   background-color: rgba(96, 40, 20, 0.2);
   padding: 3rem 0;
 }
-#faq .faq-btn {
-  background-color: #602814;
-  border-radius: 1rem;
-  margin: 0 46%;
-  width: 8%;
+#faq .faq-head {
+  padding-bottom: 2.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #602814;
+  font-family: "Playfair Display", serif;
 }
-#faq .faq-btn span {
+#faq .faq-btn {
+  border-radius: 1rem;
+  margin: auto;
+  width: 7rem;
+}
+#faq .faq-btn button {
+  text-align: center;
   display: inline-block;
   width: 100%;
   padding: 0.5rem 0.7rem;
@@ -1691,15 +1799,11 @@ nav .nav-container .white {
   transition: all 400ms ease;
   font-size: 0.8rem;
   box-shadow: none;
-  text-align: center;
 }
-#faq .faq-btn span:hover {
+#faq .faq-btn button:hover {
   background: #602814;
   color: #fffffe;
   font-size: 0.9rem;
-}
-#faq .faq-btn span:hover {
-  font-size: 0.8rem;
 }
 #faq .faq-container {
   margin: 0 9%;
@@ -1715,7 +1819,6 @@ nav .nav-container .white {
   font-family: "Playfair Display", serif;
   padding: 1rem;
   justify-content: space-between;
-  position: relative;
 }
 #faq .faq-container .questions .question-title .question-btn {
   font-size: 1.3rem;
@@ -1725,18 +1828,12 @@ nav .nav-container .white {
 #faq .faq-container .questions .question-title .question-btn .minus {
   display: none;
 }
-#faq .faq-container .questions .question-title .question-btn .display-btns {
-  display: block;
-}
 #faq .faq-container .questions .question-answer {
   font-family: "Lato", sans-serif;
   color: #602814;
   padding: 1rem;
   display: none;
   border-top: 2px solid rgba(96, 40, 20, 0.5);
-}
-#faq .faq-container .questions .display-btns {
-  display: block;
 }
 
 .display-btns {
@@ -1747,6 +1844,39 @@ nav .nav-container .white {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  #faq .faq-head {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #faq .faq-btn {
+    margin-top: 2rem;
+  }
+  #faq .faq-container {
+    margin: 0 2rem;
+  }
+  #faq .faq-container .questions .question-title {
+    font-size: 0.9rem;
+    align-items: center;
+  }
+  #faq .faq-container .questions .question-title h3 {
+    padding-right: 1rem;
+    text-align: justify;
+  }
+  #faq .faq-container .questions .question-title .question-btn {
+    font-size: 1.2rem;
+    height: 100%;
+    padding: 0.2rem;
+  }
+  #faq .faq-container .questions .question-title .question-btn .display-btns {
+    display: inline-block;
+  }
+  #faq .faq-container .questions .question-answer {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
 #signup {
   background-image: url(/images/arami/Wander-Series-flatlay-ABC.jpg);
   background-position: center center;
@@ -1818,6 +1948,35 @@ nav .nav-container .white {
   font-size: 1.1rem;
 }
 
+@media screen and (max-width: 1024px) {
+  #signup .sign-overlay .sign {
+    width: 100%;
+  }
+  #signup .sign-overlay .sign p {
+    text-align: center;
+  }
+  #signup .sign-overlay .sign input {
+    text-align: center;
+    width: 50%;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 600px) {
+  #signup .sign-overlay {
+    padding: 1rem;
+  }
+  #signup .sign-overlay .sign h3 {
+    font-size: 1.5rem;
+  }
+  #signup .sign-overlay .sign p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  #signup .sign-overlay .sign input {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 #sp {
   background-color: #fffffe;
 }

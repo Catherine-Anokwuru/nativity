@@ -56,3 +56,46 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  #signup {
+    .sign-overlay {
+      .sign {
+        width: 100%;
+
+        p {
+          text-align: center;
+        }
+
+        input {
+          text-align: center;
+          width: 50%;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #signup {
+    .sign-overlay {
+      padding: 1rem;
+
+      .sign {
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          text-align: justify;
+          font-size: 1rem;
+        }
+
+        input {
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

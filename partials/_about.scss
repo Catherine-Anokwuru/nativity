@@ -98,13 +98,16 @@
         }
       }
       .btn-container {
-        border-bottom: 2px solid rgba($black-color, 0.2);
+        border-bottom: none;
         margin: 0 auto;
-        width: 15.5rem;
+        width: 100%;
+        display: inline-flex;
         justify-content: center;
 
         .tab-btn {
-          width: 5rem;
+          border-bottom: 2px solid rgba($black-color, 0.2);
+          margin-right: 0.3rem;
+          width: auto;
           font-size: 1rem;
           padding: 0.5rem 0.5rem;
         }

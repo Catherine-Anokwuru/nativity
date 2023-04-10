@@ -4,19 +4,20 @@
 #faq {
   background-color: rgba($primary-color, 0.2);
   padding: 3rem 0;
-
+  .faq-head {
+    padding-bottom: 2.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: $primary-color;
+    font-family: $primary-font;
+  }
   .faq-btn {
-    background-color: $primary-color;
     border-radius: 1rem;
-    margin: 0 46%;
-    width: 8%;
-
-    span {
-      @include button;
+    margin: auto;
+    width: 7rem;
+    button {
       text-align: center;
-      &:hover {
-        font-size: 0.8rem;
-      }
+      @include button;
     }
   }
   .faq-container {
@@ -33,7 +34,6 @@
         font-family: $primary-font;
         padding: 1rem;
         justify-content: space-between;
-        position: relative;
 
         .question-btn {
           font-size: 1.3rem;
@@ -42,10 +42,6 @@
 
           .minus {
             display: none;
-          }
-
-          .display-btns {
-            display: block;
           }
         }
       }
@@ -56,9 +52,6 @@
         display: none;
         border-top: 2px solid rgba($primary-color, 0.5);
       }
-      .display-btns {
-        display: block;
-      }
     }
   }
 }
@@ -68,4 +61,45 @@
 
 .unshow {
   display: none;
+}
+@media screen and (max-width: 1024px) {
+  #faq {
+    .faq-head {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #faq {
+    .faq-btn {
+      margin-top: 2rem;
+    }
+    .faq-container {
+      margin: 0 2rem;
+
+      .questions {
+        .question-title {
+          font-size: 0.9rem;
+          align-items: center;
+          h3 {
+            padding-right: 1rem;
+            text-align: justify;
+          }
+
+          .question-btn {
+            font-size: 1.2rem;
+            height: 100%;
+            padding: 0.2rem;
+            .display-btns {
+              display: inline-block;
+            }
+          }
+        }
+        .question-answer {
+          font-size: 1rem;
+          text-align: justify;
+        }
+      }
+    }
+  }
 }

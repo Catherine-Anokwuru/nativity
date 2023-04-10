@@ -14,7 +14,6 @@
     h3 {
       font-family: $primary-font;
       font-size: 1.8rem;
-
       padding-bottom: 0.5rem;
       text-align: center;
       color: $primary-color;
@@ -33,7 +32,6 @@
         font-family: $secondary-font;
         line-height: 2rem;
         text-align: justify;
-        // padding-right: 2rem;
       }
       .card-img {
         img {
@@ -50,8 +48,6 @@
         }
       }
 
-      // .card-text {
-      // border-top: 2px solid rgba($black-color, 0.2);
       padding: 0.5rem;
       line-height: 1.5rem;
       text-align: center;
@@ -68,13 +64,6 @@
         font-family: $primary-font;
       }
 
-      // p {
-      //   font-family: $secondary-font;
-      //   font-size: 1rem;
-
-      //   text-align: center;
-      // }
-
       button {
         display: none;
         span {
@@ -90,32 +79,69 @@
     padding-bottom: 1rem;
 
     .container {
-      margin-left: 9%;
-      margin-right: 9%;
+      margin-left: 2rem;
+      margin-right: 2rem;
       padding-top: 1.5rem;
-      display: grid;
-      grid-template-columns: auto;
-      // gap: 2rem;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "card2"
+        "card3"
+        "card6"
+        "card7";
 
-      .card2,
-      .card4 {
-        padding-top: 0;
+      h3 {
+        font-size: 1.5rem;
       }
+
+      .card2 {
+        grid-area: card2;
+      }
+
+      .card3 {
+        grid-area: card3;
+      }
+
+      .card6 {
+        grid-area: card6;
+      }
+
+      .card7 {
+        grid-area: card7;
+      }
+
       .card {
-        .card-img {
-          img {
-            width: 100%;
-            height: 20rem;
-            // border-top-right-radius: 1rem;
-            // border-top-left-radius: 1rem;
-            object-fit: cover;
-            object-position: center center;
-          }
-        }
         .card-text {
           button {
+            margin-top: 1rem;
             display: block;
             margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #bs {
+    padding: 2rem 0;
+
+    .container {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-top: 0;
+      row-gap: 1rem;
+
+      h3 {
+        padding-bottom: 1rem;
+      }
+      .card1 {
+        grid-template-columns: 1fr;
+      }
+      .card {
+        .card-text {
+          button {
+            margin-top: 0.5rem;
           }
         }
       }
