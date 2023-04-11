@@ -1329,7 +1329,7 @@ nav .nav-container .white {
 }
 
 #face-header {
-  background-image: url(../images/nokware/cream-background.webp);
+  background-image: url(./images/nokware/cream-background.webp);
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1617,7 +1617,7 @@ nav .nav-container .white {
 }
 
 #fac-header {
-  background-image: url(/images/dang/dang-model.webp);
+  background-image: url(./images/dang/dang-model.webp);
   height: 80vh;
   width: 100vw;
   background-position: center center;
@@ -1902,7 +1902,7 @@ nav .nav-container .white {
   }
 }
 #signup {
-  background-image: url(/images/arami/Wander-Series-flatlay-ABC.jpg);
+  background-image: url(./images/arami/Wander-Series-flatlay-ABC.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
