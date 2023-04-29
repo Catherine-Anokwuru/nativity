@@ -123,39 +123,39 @@ const setSkinIssue = (list) => {
 };
 
 // PRICE FILTER
-const priceFilter = (item) => {
-  const high = document.querySelector(".high");
-  high.addEventListener("click", function (event) {
-    const element = event.currentTarget;
-    // console.log(element);
-    if (element) {
-      const newItem = item.filter(function (products) {
-        let { price } = products;
-        // console.log(price);
-        price.sort(function (a, b) {
-          return a - b;
-        });
-        console.log(a - b);
-      });
-    }
+// const priceFilter = (item) => {
+//   const high = document.querySelector(".high");
+//   high.addEventListener("click", function (event) {
+//     const element = event.currentTarget;
+//     // console.log(element);
+//     if (element) {
+//       const newItem = item.filter(function (products) {
+//         let { price } = products;
+//         // console.log(price);
+//         price.sort(function (a, b) {
+//           return a - b;
+//         });
+//         console.log(a - b);
+//       });
+//     }
 
-    // const points = [40, 100, 1, 5, 25, 10];
-    // points.sort(function (a, b) {
-    //   return a - b;
-    // });
+// const points = [40, 100, 1, 5, 25, 10];
+// points.sort(function (a, b) {
+//   return a - b;
+// });
 
-    // const trial = skinIssue.values();
-    // for (const letter of trial) {
-    //   if (element === letter) {
-    //     return products;
-    //   }
-    // }
-    // if (element === "all") {
-    //   return products;
-    // }
-    displayProducts(newItem, productDOM);
-  });
-};
+// const trial = skinIssue.values();
+// for (const letter of trial) {
+//   if (element === letter) {
+//     return products;
+//   }
+// }
+// if (element === "all") {
+//   return products;
+// }
+//     displayProducts(newItem, productDOM);
+//   });
+// };
 
 //CALLING IT
 const start = async () => {
@@ -164,7 +164,7 @@ const start = async () => {
   setSkinIssue(data);
   displayProducts(data);
   setSearch(data);
-  priceFilter(data);
+  // priceFilter(data);
 };
 
 //PAGINATION

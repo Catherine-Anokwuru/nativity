@@ -6,7 +6,7 @@ const productDOM = document.querySelector(".ctn");
 const nokware = (list) => {
   const newItem = list.filter(function (products) {
     let { brand } = products;
-    if (brand === "Nokware") {
+    if (brand === "Dang") {
       // console.log("hi");
       return products;
     }
@@ -25,7 +25,7 @@ let setSearch = (store) => {
     // if (value) {
     const newProducts = store.filter((product) => {
       let { name, brand } = product;
-      if (brand === "Nokware") {
+      if (brand === "Dang") {
         if (textInput.value === "") {
           return product;
         }
@@ -63,7 +63,7 @@ const setSkinType = (list) => {
       let { skinType, brand } = products;
       const trial = skinType.values();
       for (const letter of trial) {
-        if (brand === "Nokware") {
+        if (brand === "Dang") {
           if (element === letter) {
             return products;
           }
@@ -88,7 +88,7 @@ const setSkinIssue = (list) => {
       let { skinIssue, brand } = products;
       const trial = skinIssue.values();
       for (const letter of trial) {
-        if (brand === "Nokware") {
+        if (brand === "Dang") {
           if (element == letter) {
             return products;
           }

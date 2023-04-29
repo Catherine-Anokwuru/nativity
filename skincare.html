@@ -17,85 +17,123 @@
 
   <body>
     <!-- NAVIGATION BAR -->
-    <nav id="nav">
-      <div class="up-container">
-        <div class="search-bar">
-          <a href="#"><i class="bx bx-search"></i></a>
+    <nav id="navigation" class="nav">
+      <div class="nav-container">
+        <div class="sb">
+          <button class="sidebar" id="open_nav_btn">
+            <i class="bx bx-menu"></i>
+          </button>
+
+          <button class="sidebar">
+            <i class="bx bx-moon"></i>
+          </button>
         </div>
 
+        <!-- <div class="up-container">
+        <div class="currency">
+          <span>NGN</span>
+        </div> -->
+
         <div class="left-bar">
-          <a href="#">
-            <h3><span class="material-symbols-outlined"> south_america </span>Nativity</h3>
+          <a href="index.html">
+            <span class="material-symbols-outlined">south_america</span>
+
+            <h2>Nativity</h2>
           </a>
         </div>
 
-        <div class="right-bar">
-          <a href="#cart"><i class="bx bx-cart-add"></i></a>
-          <a href="#contact"><i class="bx bx-phone"></i></a>
-        </div>
-      </div>
-
-      <div class="container">
         <div class="middle-bar">
-          <ul id="nav_bar">
+          <ul id="nav-bar">
             <li>
-              <a href="index.html">Home</a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="#about-us">About Us</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="index.html#bs">Bestsellers</a></li>
-                  <li><a href="index.html#reviews">Reviews</a></li>
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                </ul>
-              </div>
+              <button class="link-btn">Home</button>
             </li>
 
             <li>
-              <a href="#categories">Categories</a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="#">All skincare</a></li>
-                  <li><a href="face.html">Face</a></li>
-                  <li><a href="body.html">Body</a></li>
-                  <li><a href="hands.html">Hands</a></li>
-                  <li><a href="soaps.html">Soap</a></li>
-                  <li><a href="lotion.html">Lotion</a></li>
-                  <li><a href="serums.html">Serums</a></li>
-                  <li><a href="oils.html">Oils</a></li>
-                  <li><a href="sets.html">Sets</a></li>
-                </ul>
-              </div>
+              <button class="link-btn">Categories</button>
             </li>
 
             <li>
-              <a href="#brands">Brands</a>
-              <div class="submenu">
-                <ul>
-                  <li><a href="nok.html">Nokware</a></li>
-                  <li><a href="dang.html">Dang</a></li>
-                  <li><a href="arami.html">Arami</a></li>
-                </ul>
-              </div>
+              <button class="link-btn">Brands</button>
             </li>
-
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="#p&o">Promos & Offers</a></li>
           </ul>
         </div>
 
-        <button id="open_nav_btn"><i class="bx bx-menu"></i></button>
-        <button id="close_nav_btn"><i class="bx bx-x-circle"></i></button>
+        <div class="right-bar">
+          <span><i class="bx bx-search"></i></span>
+          <div class="toggle-container">
+            <button class="toggle-cart">
+              <i class="bx bx-cart"></i>
+            </button>
+            <span class="cart-item-count">1</span>
+          </div>
+          <a href="#login"><i class="bx bx-user"></i></a>
+
+          <i class="bx bx-moon"></i>
+        </div>
       </div>
     </nav>
     <!-- END OF NAVIGATION BAR -->
 
+    <!-- SIDEBAR -->
+    <div class="sidebar-wrapper">
+      <aside class="side-bar">
+        <button class="sidebar" id="close_nav_btn">
+          <i class="bx bx-x-circle"></i>
+        </button>
+        <div class="sidebar-links"></div>
+      </aside>
+    </div>
+    <!-- END OF SIDEBAR -->
+
+    <!-- BIG SCREEN SUBMENU -->
+    <aside class="main-submenu"></aside>
+    <!-- END OF BIG SCREEN SUBMENU -->
+
+    <!-- SHOPPING CART -->
+    <div class="cart-overlay">
+      <aside class="s-cart">
+        <button class="cart-close">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        <header>
+          <h3 class="text-slanted">Your cart</h3>
+        </header>
+        <!-- cart items -->
+        <div class="cart-items">
+          <article class="cart-item" data-id="">
+            <img class="cart-item-img" src="images/nokware/face/face background.jpg" class="cart-item-img" alt="name" />
+
+            <div>
+              <h4 class="cart-item-name">Nokware face moisturizer</h4>
+              <p class="cart-item-price">15000</p>
+              <button class="cart-item-remove-btn">remove</button>
+            </div>
+
+            <div>
+              <button class="cart-item-increase-btn">
+                <i class="bx bx-plus"></i>
+              </button>
+              <p class="cart-item-amount">1</p>
+              <button class="cart-item-decrease-btn">
+                <i class="bx bx-minus"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted">Total : 13000</h3>
+          <button class="cart-checkout btn">Checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <!-- END OF SHOPPING CART -->
+
     <!-- HEAD SECTION -->
-    <section id="face-header">
+    <section id="face-header" style="background-image: url(./images/nokware/cream-background.webp)">
       <div class="layer"></div>
       <div class="face-main-text">
-        <h3>Soaps, cleansers, moisturizers, serums and oils.</h3>
+        <h3>All Skincare.</h3>
       </div>
     </section>
     <!-- END OF HEAD SECTION -->
@@ -104,7 +142,6 @@
     <section id="sk">
       <div class="entire-container">
         <div class="filters">
-          <!-- search -->
           <form class="input-form">
             <input type="text" class="search-input" placeholder="search..." />
           </form>
@@ -139,14 +176,14 @@
           </div>
 
           <!-- PRICE FILTER -->
-          <div class="con">
+          <!-- <div class="con">
             <h4 class="dropdown">Filter by price<i class="bx bx-chevron-down"></i></h4>
             <article class="price-filter each-filter">
-              <button class="skin-filter low price">Lowest to highest</button>
-              <button class="skin-filter high price">Highest to lowest</button>
+              <button class="skin-filter price">Lowest to highest</button>
+              <button class="skin-filter price">Highest to lowest</button>
             </article>
 
-            <!-- <form class="price-form">
+            <form class="price-form">
                 <h4>Filter by price</h4>
 
                 <input
@@ -158,17 +195,12 @@
                 />
               </form>
               <p class="price-value"></p> -->
-            <!-- <form class="price-form">
-              <h4>Filter by price</h4>
-
-              <input type="range" class="price" min="0" value="50" max="100" />
-            </form>
-            <p class="price-value"></p> -->
-          </div>
+          <!-- </div> -->
         </div>
+
         <div id="swiper5" class="container ctn"></div>
       </div>
-      <div class="page"></div>
+      <!-- <div class="page"></div> -->
     </section>
     <!-- END OF BODY SECTION -->
 
@@ -189,11 +221,11 @@
             <h3><span class="material-symbols-outlined"> south_america </span>Nativity</h3>
           </a>
           <p>Lorem ipsum dolor sit amet, consectetur elit, Laudantium, lorem fadii.</p>
-          <div>
+          <div class="contact">
             <i class="bx bx-phone"></i>
             <small>+23466677788</small>
           </div>
-          <div>
+          <div class="contact">
             <i class="bx bxl-gmail"></i>
             <small>support@nativity.com</small>
           </div>
@@ -235,13 +267,13 @@
         <small>&copy; <span id="footer-date"> </span> Copyright CATHERINE ANOKWURU. All Rights Reserved</small>
       </div>
     </footer>
+    <!-- END OF FOOTER SECTION -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <!-- <script src="main.js"></script> -->
-    <script type="module" src="skincare.js"></script>
     <script type="module" src="utils.js"></script>
+    <script type="module" src="skincare.js"></script>
+    <script type="module" src="navbar.js"></script>
+    <script type="module" src="./shopping cart/toggleCart.js"></script>
+    <script src="footer.js"></script>
   </body>
 </html>

@@ -82,29 +82,8 @@ var swiper = new Swiper(".swiper4", {
 /*end of reviews*/
 
 /*Promo section*/
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-const weekdays = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const promoEnds = document.querySelector(".promo-ends");
 const countdown = document.querySelector(".promo-countdown");
@@ -174,7 +153,3 @@ function remainingTime() {
 //loop countdown
 let down = setInterval(remainingTime, 1000);
 remainingTime();
-
-/*footer*/
-const footerDate = document.getElementById("footer-date");
-footerDate.innerHTML = new Date().getFullYear();

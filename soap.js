@@ -5,8 +5,8 @@ import { displayProducts } from "./skincare.js";
 const productDOM = document.querySelector(".ctn");
 const nokware = (list) => {
   const newItem = list.filter(function (products) {
-    let { brand } = products;
-    if (brand === "Nokware") {
+    let { category } = products;
+    if (category === "soap") {
       // console.log("hi");
       return products;
     }
@@ -24,8 +24,8 @@ let setSearch = (store) => {
     // console.log(value);
     // if (value) {
     const newProducts = store.filter((product) => {
-      let { name, brand } = product;
-      if (brand === "Nokware") {
+      let { name, category } = product;
+      if (category === "soap") {
         if (textInput.value === "") {
           return product;
         }
@@ -60,10 +60,10 @@ const setSkinType = (list) => {
     const element = event.target.textContent.toLowerCase();
     // console.log(element);
     const newItem = list.filter(function (products) {
-      let { skinType, brand } = products;
+      let { skinType, category } = products;
       const trial = skinType.values();
       for (const letter of trial) {
-        if (brand === "Nokware") {
+        if (category === "soap") {
           if (element === letter) {
             return products;
           }
@@ -85,10 +85,10 @@ const setSkinIssue = (list) => {
     const element = event.target.textContent.toLowerCase();
     // console.log(element);
     const newItem = list.filter(function (products) {
-      let { skinIssue, brand } = products;
+      let { skinIssue, category } = products;
       const trial = skinIssue.values();
       for (const letter of trial) {
-        if (brand === "Nokware") {
+        if (category === "soap") {
           if (element == letter) {
             return products;
           }
@@ -110,14 +110,14 @@ const setSkinIssue = (list) => {
 //     const element = e.target.textContent.toLowerCase();
 //     // console.log(element);
 //     const newPrice = amount.map(function (products) {
-//       let { price, brand } = products;
+//       let { price, category } = products;
 //       const item = [];
 //       item.push(price);
 //       console.log(item);
 //       // const prices = Array.from(products);
 //       // console.log(prices);
 
-//       if (brand === "Nokware") {
+//       if (category === "Nokware") {
 //         if (element === "lowest to highest") {
 //           item.sort(function (a, b) {
 //             console.log(b - a);

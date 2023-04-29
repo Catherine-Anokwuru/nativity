@@ -1,9 +1,9 @@
 #sp {
-    background-color: $white-color;
-
+  background-color: $white-color;
 
   .single-ctn {
-    margin:  9%;
+    margin: 0 9%;
+    padding: 10rem 0;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 2rem;
@@ -28,7 +28,6 @@
         // padding-bottom: 1rem;
         color: $primary-color;
         text-align: start;
-
       }
       h4 {
         font-size: 1rem;
@@ -38,26 +37,25 @@
         font-size: 1.2rem;
         line-height: 1.8rem;
         padding-bottom: 1rem;
-
       }
       .quantity {
         font-size: 1rem;
         padding: 1rem;
-        .quan-btn{
-            display: flex;
-            justify-content: space-between;
-            border: 2px solid $dark-color;
-            padding: 0.8rem 0.5rem;
-            margin: 1rem;
-            width: 8rem;
+        .quan-btn {
+          display: flex;
+          justify-content: space-between;
+          border: 2px solid $dark-color;
+          padding: 0.8rem 0.5rem;
+          margin: 1rem;
+          width: 8rem;
 
-        .minus, .plus,
-        .quantity-input {
-        font-size: 1.5rem;
-        text-align: center;
-        width: 100%
-        
-        }
+          .minus,
+          .plus,
+          .quantity-input {
+            font-size: 1.5rem;
+            text-align: center;
+            width: 100%;
+          }
         }
       }
       .add-to-cart {
@@ -67,10 +65,10 @@
         padding: 0.8rem 0;
 
         &:hover {
-            background: $primary-color;
-            color: $white-color;
-            font-size: 1.4rem;
-          }
+          background: $primary-color;
+          color: $white-color;
+          font-size: 1.4rem;
+        }
       }
     }
   }

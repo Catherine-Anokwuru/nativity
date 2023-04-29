@@ -74,6 +74,61 @@
     </nav>
     <!-- END OF NAVIGATION BAR -->
 
+    <!-- SIDEBAR -->
+    <div class="sidebar-wrapper">
+      <aside class="side-bar">
+        <button class="sidebar" id="close_nav_btn">
+          <i class="bx bx-x-circle"></i>
+        </button>
+        <div class="sidebar-links"></div>
+      </aside>
+    </div>
+    <!-- END OF SIDEBAR -->
+
+    <!-- BIG SCREEN SUBMENU -->
+    <aside class="main-submenu"></aside>
+    <!-- END OF BIG SCREEN SUBMENU -->
+
+    <!-- SHOPPING CART -->
+    <div class="cart-overlay">
+      <aside class="s-cart">
+        <button class="cart-close">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        <header>
+          <h3 class="text-slanted">Your cart</h3>
+        </header>
+        <!-- cart items -->
+        <div class="cart-items">
+          <article class="cart-item" data-id="">
+            <img class="cart-item-img" src="images/nokware/face/face background.jpg" class="cart-item-img" alt="name" />
+
+            <div>
+              <h4 class="cart-item-name">Nokware face moisturizer</h4>
+              <p class="cart-item-price">15000</p>
+              <button class="cart-item-remove-btn">remove</button>
+            </div>
+
+            <div>
+              <button class="cart-item-increase-btn">
+                <i class="bx bx-plus"></i>
+              </button>
+              <p class="cart-item-amount">1</p>
+              <button class="cart-item-decrease-btn">
+                <i class="bx bx-minus"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted">Total : 13000</h3>
+          <button class="cart-checkout btn">Checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <!-- END OF SHOPPING CART -->
+
     <!-- HEAD SECTION -->
     <section id="face-header" style="background-image: url(./images/nokware/set/Box3-768x768.jpg)">
       <div class="layer"></div>
@@ -121,14 +176,14 @@
           </div>
 
           <!-- PRICE FILTER -->
-          <div class="con">
+          <!-- <div class="con">
             <h4 class="dropdown">Filter by price<i class="bx bx-chevron-down"></i></h4>
             <article class="price-filter each-filter">
               <button class="skin-filter price">Lowest to highest</button>
               <button class="skin-filter price">Highest to lowest</button>
             </article>
 
-            <!-- <form class="price-form">
+            <form class="price-form">
                 <h4>Filter by price</h4>
 
                 <input
@@ -140,7 +195,7 @@
                 />
               </form>
               <p class="price-value"></p> -->
-          </div>
+          <!-- </div> -->
         </div>
 
         <div id="swiper5" class="container ctn"></div>
@@ -152,17 +207,25 @@
     <!-- FOOTER SECTION -->
     <footer id="footer">
       <div class="container">
+        <article class="sign">
+          <h3 class="mail">Join our exclusive mailing list</h3>
+          <p>Get skincare tips routine and first dibs on available and new products when you sign up with us.</p>
+          <input type="email" name="email" placeholder="Enter your email" id="email" />
+          <button>
+            <span>Sign up</span>
+          </button>
+        </article>
+
         <article>
           <a href="#" class="footer_logo">
             <h3><span class="material-symbols-outlined"> south_america </span>Nativity</h3>
           </a>
           <p>Lorem ipsum dolor sit amet, consectetur elit, Laudantium, lorem fadii.</p>
-          <div>
+          <div class="contact">
             <i class="bx bx-phone"></i>
             <small>+23466677788</small>
           </div>
-
-          <div>
+          <div class="contact">
             <i class="bx bxl-gmail"></i>
             <small>support@nativity.com</small>
           </div>
@@ -173,8 +236,8 @@
           <a href="#">Privacy Policy</a>
           <a href="#">Cookie Policy</a>
           <a href="#">Purchasing Policy</a>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Career</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">Track Your Order</a>
         </article>
 
         <article>
@@ -182,14 +245,13 @@
           <a href="#">Home</a>
           <a href="#categories">Categories</a>
           <a href="#brands">Brands</a>
-          <a href="#blog">Blog</a>
-          <a href="#">Promos & offers</a>
         </article>
 
         <article>
           <h3>Socials</h3>
-          <p>Press</p>
-          <p>FAQs</p>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+
           <div class="footer_socials">
             <a href="#"><i class="bx bxl-instagram"></i></a>
             <a href="#"><i class="bx bxl-twitter"></i></a>
@@ -198,18 +260,20 @@
           </div>
         </article>
       </div>
-
+      <div class="payment">
+        <img src="images/payments.png" alt="" />
+      </div>
       <div class="copyright">
-        <small>&copy; Copyright CATHERINE ANOKWURU. All Rights Reserved</small>
+        <small>&copy; <span id="footer-date"> </span> Copyright CATHERINE ANOKWURU. All Rights Reserved</small>
       </div>
     </footer>
+    <!-- END OF FOOTER SECTION -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <!-- <script src="main.js"></script> -->
     <script type="module" src="nok.js"></script>
     <script type="module" src="utils.js"></script>
+    <script type="module" src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script type="module" src="./shopping cart/toggleCart.js"></script>
   </body>
 </html>

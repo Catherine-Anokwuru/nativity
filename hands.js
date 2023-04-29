@@ -5,8 +5,9 @@ import { displayProducts } from "./skincare.js";
 const productDOM = document.querySelector(".ctn");
 const nokware = (list) => {
   const newItem = list.filter(function (products) {
-    let { brand } = products;
-    if (brand === "Nokware") {
+    let { usage } = products;
+    // console.log(usage);
+    if (usage === "hand") {
       // console.log("hi");
       return products;
     }
@@ -24,8 +25,8 @@ let setSearch = (store) => {
     // console.log(value);
     // if (value) {
     const newProducts = store.filter((product) => {
-      let { name, brand } = product;
-      if (brand === "Nokware") {
+      let { name, usage } = product;
+      if (usage === "hand") {
         if (textInput.value === "") {
           return product;
         }
@@ -60,10 +61,10 @@ const setSkinType = (list) => {
     const element = event.target.textContent.toLowerCase();
     // console.log(element);
     const newItem = list.filter(function (products) {
-      let { skinType, brand } = products;
+      let { skinType, usage } = products;
       const trial = skinType.values();
       for (const letter of trial) {
-        if (brand === "Nokware") {
+        if (usage === "hand") {
           if (element === letter) {
             return products;
           }
@@ -85,10 +86,10 @@ const setSkinIssue = (list) => {
     const element = event.target.textContent.toLowerCase();
     // console.log(element);
     const newItem = list.filter(function (products) {
-      let { skinIssue, brand } = products;
+      let { skinIssue, usage } = products;
       const trial = skinIssue.values();
       for (const letter of trial) {
-        if (brand === "Nokware") {
+        if (usage === "hand") {
           if (element == letter) {
             return products;
           }

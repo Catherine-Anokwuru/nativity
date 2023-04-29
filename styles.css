@@ -184,7 +184,7 @@ nav .nav-container .white {
   display: grid;
   row-gap: 1.5rem;
   -moz-column-gap: 2rem;
-  column-gap: 2rem;
+       column-gap: 2rem;
 }
 .main-submenu .submenu-content .submenu-center span {
   font-family: "Lato", sans-serif;
@@ -313,7 +313,7 @@ nav .nav-container .white {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1.1rem;
     -moz-column-gap: 0.6rem;
-    column-gap: 0.6rem;
+         column-gap: 0.6rem;
     font-family: "Lato", sans-serif;
     padding-bottom: 1.7rem;
   }
@@ -355,7 +355,7 @@ nav .nav-container .white {
   left: 0;
   display: none;
   -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   z-index: 24;
   overflow: hidden;
 }
@@ -437,9 +437,9 @@ nav .nav-container .white {
   height: 93vh;
   display: block;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: 50% 55%;
-  object-position: 50% 55%;
+     object-position: 50% 55%;
 }
 #home #swiper1 .swiper-slide .logo {
   position: absolute;
@@ -728,9 +728,9 @@ nav .nav-container .white {
   width: 100%;
   height: 20rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
-  object-position: center center;
+     object-position: center center;
   overflow: hidden;
 }
 #about-us .about .about-content .active {
@@ -1001,7 +1001,7 @@ nav .nav-container .white {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 5rem;
-  column-gap: 5rem;
+       column-gap: 5rem;
   row-gap: 2rem;
 }
 #bs .container h3 {
@@ -1034,9 +1034,9 @@ nav .nav-container .white {
   width: 100%;
   height: 18rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
-  object-position: center center;
+     object-position: center center;
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
 }
@@ -1403,7 +1403,7 @@ nav .nav-container .white {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 0.1px;
   -moz-column-gap: 2rem;
-  column-gap: 2rem;
+       column-gap: 2rem;
   width: 100%;
 }
 #sk .entire-container #swiper5 .filter-error-text {
@@ -1423,9 +1423,9 @@ nav .nav-container .white {
   height: 14rem;
   display: block;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
-  object-position: center center;
+     object-position: center center;
 }
 #sk .entire-container #swiper5 a .p-card .card-text {
   border-top: 2px solid rgba(41, 40, 40, 0.5);
@@ -1568,7 +1568,7 @@ nav .nav-container .white {
     padding-top: 1rem;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 1rem;
-    column-gap: 1rem;
+         column-gap: 1rem;
   }
   #sk .entire-container #swiper5 .filter-error-text {
     font-size: 1.1rem;
@@ -1665,9 +1665,9 @@ nav .nav-container .white {
   width: 100%;
   height: 20rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
-  object-position: center center;
+     object-position: center center;
 }
 #blog .b-card .blog-text {
   border-top: 3px solid rgba(96, 40, 20, 0.3);
@@ -1719,9 +1719,9 @@ nav .nav-container .white {
   width: 100%;
   height: 18.4rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
-  object-position: center center;
+     object-position: center center;
   overflow: hidden;
 }
 #promo .promo-text {
@@ -2005,7 +2005,8 @@ nav .nav-container .white {
   background-color: #fffffe;
 }
 #sp .single-ctn {
-  margin: 9%;
+  margin: 0 9%;
+  padding: 10rem 0;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 2rem;
@@ -2017,9 +2018,9 @@ nav .nav-container .white {
   width: 100%;
   height: 35rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center center;
-  object-position: center center;
+     object-position: center center;
 }
 #sp .single-ctn .single-text {
   color: #292828;
@@ -2150,14 +2151,14 @@ nav .nav-container .white {
   display: grid;
   grid-template-columns: auto 1fr auto;
   -moz-column-gap: 1.5rem;
-  column-gap: 1.5rem;
+       column-gap: 1.5rem;
   align-items: center;
 }
 .cart-overlay .s-cart .cart-items .cart-item .cart-item-img {
   width: 75px;
   height: 50px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 0.25rem;
 }
 .cart-overlay .s-cart .cart-items .cart-item div .cart-item-name {
@@ -2219,4 +2220,4 @@ nav .nav-container .white {
   100% {
     right: 0%;
   }
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

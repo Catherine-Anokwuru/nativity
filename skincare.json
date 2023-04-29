@@ -434,7 +434,7 @@
     "price": 7000,
     "brand": "Arami",
     "usage": "face",
-    "category": "serum",
+    "category": "sets",
     "skinType": ["oily", "combination"],
     "skinIssue": ["acne", "hyperpigmentation", "uneven skin texture", "dullness"],
     "image": "images/arami/Arami-Essentials-Edens-Elixir-1300x1300.jpg",
