@@ -29,6 +29,7 @@
       line-height: 1.5rem;
       text-align: center;
       color: $black-color;
+
       p {
         font-size: 1rem;
         color: $primary-color;
@@ -45,6 +46,7 @@
           object-position: center center;
           border-top-right-radius: 2rem;
           border-bottom-left-radius: 2rem;
+
           &:hover {
             transform: scale(1.04, 1.04);
           }

@@ -1212,7 +1212,7 @@ nav .nav-container .white {
   transition: all 400ms ease;
 }
 #footer .container a:hover {
-  color: #5b064d;
+  color: #d3a067;
 }
 #footer .container a > h3 {
   color: #fffffe;
@@ -2087,6 +2087,62 @@ nav .nav-container .white {
   font-size: 1.4rem;
 }
 
+@media screen and (max-width: 1024px) {
+  #sp .single-ctn {
+    margin: 0 9%;
+    padding: 9rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  #sp .single-ctn {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+  #sp .single-ctn .single-image img {
+    height: 20rem;
+  }
+  #sp .single-ctn .single-text h1 {
+    font-size: 1.8rem;
+  }
+  #sp .single-ctn .single-text h4 {
+    font-size: 0.9rem;
+  }
+  #sp .single-ctn .single-text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.2rem;
+  }
+  #sp .single-ctn .single-text .quantity {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+  #sp .single-ctn .single-text .add-to-cart {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    background: #602814;
+    color: #fffffe;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: 0.8rem;
+    box-shadow: none;
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+  }
+  #sp .single-ctn .single-text .add-to-cart:hover {
+    background: #602814;
+    color: #fffffe;
+    font-size: 0.9rem;
+  }
+  #sp .single-ctn .single-text .add-to-cart:hover {
+    background: #602814;
+    color: #fffffe;
+    font-size: 1.4rem;
+  }
+}
 .cart-overlay {
   position: fixed;
   top: 0;

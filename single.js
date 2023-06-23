@@ -60,24 +60,26 @@ const displayProduct = (list) => {
   });
 };
 
-const plus = document.querySelector(".plus");
-const minus = document.querySelector(".minus");
-// count = 1
-const value = document.querySelector("value");
+// const plus = document.querySelector(".plus");
+// const minus = document.querySelector(".minus");
+// let count = document.getElementsByClassName("quantity-input").value;
+//  count = 1
+const value = document.querySelector("input");
 const btns = document.querySelectorAll(".btn");
 
-// btns.forEach(function (bt) {
-//     bt.addEventListener('click', function(el) {
-//         const styles = el.currentTarget.classList;
-//         console.log(styles);
-//             if(styles.contains('minus') && (count > 0)){
-//                 count--;
-//             } else if(styles.contains('plus')){
-//                 count++;
-//             } else(count = 1);
-//         value.textContent = count;
-//     });
-// });
+
+btns.forEach(function (bt) {
+    bt.addEventListener('click', function(el) {
+        const styles = el.currentTarget.classList;
+        console.log(styles);
+            if(styles.contains('minus') && (count > 0)){
+                count--;
+            } else if(styles.contains('plus')){
+                count++;
+            } else(count = 1);
+        value.textContent = count;
+    });
+});
 
 const start = async () => {
   const data = await fetchProduct();
