@@ -47,7 +47,6 @@ const setSearch = (store) => {
   const textInput = document.querySelector(".search-input");
   search.addEventListener("keyup", () => {
     const value = textInput.value;
-    // console.log(value);
     if (value) {
       const newProducts = store.filter((product) => {
         let { name } = product;
@@ -81,17 +80,17 @@ const setSearch = (store) => {
 const setSkinType = (list) => {
   const skin = document.querySelector(".skin-types");
   skin.addEventListener("click", function (event) {
-    const element = event.target.textContent.toLowerCase();
-    // console.log(element);
+    let element = event.target.textContent.toLowerCase();
+    let e = element.trim();
     const newItem = list.filter(function (products) {
       let { skinType } = products;
       const trial = skinType.values();
       for (const letter of trial) {
-        if (element === letter) {
+        if (e === letter) {
           return products;
         }
       }
-      if (element === "all") {
+      if (e === "all") {
         return products;
       }
     });
@@ -104,17 +103,16 @@ const setSkinIssue = (list) => {
   const skin = document.querySelector(".skin");
   skin.addEventListener("click", function (event) {
     const element = event.target.textContent.toLowerCase();
-    // console.log(element);
+    let e = element.trim();
     const newItem = list.filter(function (products) {
       let { skinIssue } = products;
-      // console.log(skinIssue);
       const trial = skinIssue.values();
       for (const letter of trial) {
-        if (element === letter) {
+        if (e === letter) {
           return products;
         }
       }
-      if (element === "all") {
+      if (e === "all") {
         return products;
       }
     });
@@ -232,4 +230,11 @@ start();
 
 // window.addEventListener("load", init);
 
-export { fetchProducts, displayProducts, setSearch, setSkinIssue, setSkinType, start };
+export {
+  fetchProducts,
+  displayProducts,
+  setSearch,
+  setSkinIssue,
+  setSkinType,
+  start,
+};
