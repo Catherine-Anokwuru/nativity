@@ -1331,6 +1331,7 @@ nav .nav-container .white {
 #face-header {
   background-image: url(./images/nokware/cream-background.webp);
   height: 100vh;
+  width: 100vw;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2059,7 +2060,15 @@ nav .nav-container .white {
 #sp .single-ctn .single-text .quantity .quan-btn .quantity-input {
   font-size: 1.5rem;
   text-align: center;
+  justify-content: center;
   width: 100%;
+}
+#sp .single-ctn .single-text .quantity .quan-btn .minus,
+#sp .single-ctn .single-text .quantity .quan-btn .plus {
+  cursor: pointer;
+}
+#sp .single-ctn .single-text .quantity .quan-btn .quantity-input {
+  padding-bottom: 0;
 }
 #sp .single-ctn .single-text .add-to-cart {
   display: inline-block;
@@ -2164,7 +2173,7 @@ nav .nav-container .white {
   padding: 3rem 1rem 0 1rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  overflow: scroll;
+  overflow: hidden;
 }
 .cart-overlay .s-cart header .text-slanted {
   font-weight: 800;
@@ -2176,7 +2185,8 @@ nav .nav-container .white {
   font-style: italic;
   font-family: "Lato", sans-serif;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
 }
 .cart-overlay .s-cart footer .cart-checkout {
   font-family: "Lato", sans-serif;
@@ -2186,7 +2196,7 @@ nav .nav-container .white {
   border-radius: 1.1rem;
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   background-color: #d3a067;
 }
 .cart-overlay .s-cart .cart-close {
@@ -2201,6 +2211,9 @@ nav .nav-container .white {
   color: #602814;
   font-weight: bold;
   cursor: pointer;
+}
+.cart-overlay .s-cart .cart-items {
+  overflow-x: hidden;
 }
 .cart-overlay .s-cart .cart-items .cart-item {
   margin: 1rem 0;
@@ -2256,6 +2269,23 @@ nav .nav-container .white {
   font-family: "Lato", sans-serif;
   color: #292828;
   line-height: 1;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 .show-cart-overlay {

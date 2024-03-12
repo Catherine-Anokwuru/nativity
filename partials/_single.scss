@@ -54,7 +54,16 @@
           .quantity-input {
             font-size: 1.5rem;
             text-align: center;
+            justify-content: center;
             width: 100%;
+          }
+          .minus,
+          .plus{
+            cursor: pointer;
+          }
+          .quantity-input{
+            padding-bottom: 0;
+
           }
         }
       }

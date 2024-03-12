@@ -1,5 +1,6 @@
 const productsDOM = document.querySelector("#sp");
 const url = "skincare.json";
+import { addToCart } from "./shopping cart/setupCart.js";
 import { formatPrice } from "./utils.js";
 
 const fetchProduct = async () => {
@@ -14,9 +15,18 @@ const fetchProduct = async () => {
 };
 fetchProduct();
 
-const displayProduct = (list) => {
+export let cartValue = 1;
+export const displayProduct = (list) => {
   list.find((products) => {
-    const { name: title, price, image: img, brand, description } = products;
+
+    const {
+      name: title,
+      price,
+      image: img,
+      brand,
+      description,
+      id
+    } = products;
     const params = new URLSearchParams(window.location.search);
 
     const ids = params.get("id");
@@ -24,6 +34,7 @@ const displayProduct = (list) => {
     products.id;
     if (products.id === ids) {
       document.title = title;
+
       productsDOM.innerHTML = `<div class="single-ctn">
     <div class="single-image">
       <img
@@ -42,44 +53,45 @@ const displayProduct = (list) => {
     <label class="quantity-text" for="id">Quantity</label>
     <div class="quan-btn">
       <button class="btn minus"><i class="bx bx-minus"></i></button>
-      <input
+      <p
         class="quantity-input"
         name="quantity"
         id="value"
-        min="1"
-        value="1"
-      />
+        // min="1"
+        // value=${cartValue}
+      >${cartValue}</p>
       <button class="btn plus"><i class="bx bx-plus"></i></button>
     </div>
   </div>
 
-  <button class="add-to-cart"><span>ADD TO CART</span></button>
+  <button class="add-to-cart product-cart-btn" data-id="${id}">ADD TO CART</button>
 </div>
 </div>`;
+      const minus = document.querySelector(".minus");
+      const itemCount = document.querySelector(".quantity-input");
+      const plus = document.querySelector(".plus");
+      plus.addEventListener("click", function () {
+        cartValue++;
+        itemCount.textContent = cartValue;
+      });
+      minus.addEventListener("click", function () {
+        if (cartValue > 1) {
+          cartValue--;
+          itemCount.textContent = cartValue;
+        }
+      });
+      const addCart = document.querySelector(".add-to-cart");
+       addCart.addEventListener("click", function (e) {
+         const parent = e.target;
+         if (parent) {
+           addToCart(parent.dataset.id);
+         }
+       });
     }
   });
 };
 
-// const plus = document.querySelector(".plus");
-// const minus = document.querySelector(".minus");
-// let count = document.getElementsByClassName("quantity-input").value;
-//  count = 1
-const value = document.querySelector("input");
-const btns = document.querySelectorAll(".btn");
 
-
-btns.forEach(function (bt) {
-    bt.addEventListener('click', function(el) {
-        const styles = el.currentTarget.classList;
-        console.log(styles);
-            if(styles.contains('minus') && (count > 0)){
-                count--;
-            } else if(styles.contains('plus')){
-                count++;
-            } else(count = 1);
-        value.textContent = count;
-    });
-});
 
 const start = async () => {
   const data = await fetchProduct();
