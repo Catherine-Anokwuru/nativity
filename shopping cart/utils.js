@@ -22,10 +22,12 @@
 // const singleProductUrl = allProductsUrl/singleUrl
 
 const getElement = (selection) => {
-  const element = document.querySelector(selection)
-  if (element) return element
-  throw new Error(`Please check "${selection}" selector, no such element exist`)
-}
+  const element = document.querySelector(selection);
+  if (element) return element;
+  throw new Error(
+    `Please check "${selection}" selector, no such element exist`
+  );
+};
 
 // const formatPrice = (price) => {
 //   let formattedPrice = new Intl.NumberFormat('en-US', {
@@ -36,18 +38,18 @@ const getElement = (selection) => {
 // }
 
 const getStorageItem = (item) => {
-  let storageItem = localStorage.getItem(item)
+  let storageItem = sessionStorage.getItem(item);
   if (storageItem) {
-    storageItem = JSON.parse(localStorage.getItem(item))
+    storageItem = JSON.parse(sessionStorage.getItem(item));
   } else {
-    storageItem = []
+    storageItem = [];
   }
-  return storageItem
-}
+  return storageItem;
+};
 
 const setStorageItem = (name, item) => {
-  localStorage.setItem(name, JSON.stringify(item))
-}
+  sessionStorage.setItem(name, JSON.stringify(item));
+};
 
 export {
   // allProductsUrl,
@@ -56,4 +58,4 @@ export {
   // formatPrice,
   getStorageItem,
   setStorageItem,
-}
+};
