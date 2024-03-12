@@ -1,4 +1,4 @@
-const allProductsUrl = "../skincare.json";
+const allProductsUrl = "skincare.json";
 
 export const fetchProduct = async () => {
   try {
