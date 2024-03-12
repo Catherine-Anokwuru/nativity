@@ -1331,7 +1331,6 @@ nav .nav-container .white {
 #face-header {
   background-image: url(./images/nokware/cream-background.webp);
   height: 100vh;
-  width: 100vw;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1342,7 +1341,6 @@ nav .nav-container .white {
 #face-header .layer {
   background-color: rgba(96, 40, 20, 0.5);
   height: 100vh;
-  width: 100vw;
   overflow: hidden;
 }
 #face-header .face-main-text {

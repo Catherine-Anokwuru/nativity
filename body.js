@@ -59,16 +59,18 @@ const setSkinType = (list) => {
   const skin = document.querySelector(".skin-types");
   skin.addEventListener("click", function (event) {
     const element = event.target.textContent.toLowerCase();
+    let e = element.trim();
+
     // console.log(element);
     const newItem = list.filter(function (products) {
       let { skinType, usage } = products;
       const trial = skinType.values();
       for (const letter of trial) {
         if (usage === "body") {
-          if (element === letter) {
+          if (e === letter) {
             return products;
           }
-          if (element == "all") {
+          if (e == "all") {
             return products;
           }
         }
@@ -81,19 +83,21 @@ const setSkinType = (list) => {
 
 //SKIN ISSUE FILTER
 const setSkinIssue = (list) => {
-  const skin = document.querySelector(".skin");
+  const skin = document.querySelector(".skin-issue");
   skin.addEventListener("click", function (event) {
     const element = event.target.textContent.toLowerCase();
+    let e = element.trim();
+
     // console.log(element);
     const newItem = list.filter(function (products) {
       let { skinIssue, usage } = products;
       const trial = skinIssue.values();
       for (const letter of trial) {
         if (usage === "body") {
-          if (element == letter) {
+          if (e == letter) {
             return products;
           }
-          if (element == "all") {
+          if (e == "all") {
             return products;
           }
         }
