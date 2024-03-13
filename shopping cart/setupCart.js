@@ -14,6 +14,7 @@ import { cartValue } from "../single.js";
 const cartItemCountDOM = getElement(".cart-item-count");
 const cartItemsDOM = getElement(".cart-items");
 const cartTotalDOM = getElement(".cart-total");
+const cartCheckout = getElement(".cart-checkout");
 
 let cart = getStorageItem("cart");
 
@@ -57,6 +58,7 @@ function displayCartTotal() {
     return (total += cartItem.price * cartItem.amount);
   }, 0);
   cartTotalDOM.textContent = `Total : ${formatPrice(total)} `;
+  return total;
 }
 function displayCartItemsDOM() {
   cart.forEach((cartItem) => {
@@ -132,3 +134,41 @@ const init = () => {
   setupCartFunctionality();
 };
 init();
+const cartTotal = displayCartTotal;
+// cartCheckout.addEventListener("click", setMonnify());
+
+function setMonnify() {
+  cartCheckout.addEventListener("click", function () {
+    console.log(cartTotal());
+    MonnifySDK.initialize({
+      amount: cartTotal(),
+      currency: "NGN",
+      reference: new String(new Date().getTime()),
+      customerFullName: "Nativity test",
+      customerEmail: "nativitytest@gmail.com",
+      apiKey: "MK_TEST_APXCXC4GMS",
+      contractCode: "0921819244",
+      paymentDescription: "Testing the monify gateway on nativity",
+      isTestMode: true,
+      onComplete: function (response) {
+        //Implement what happens when the transaction is completed.
+        // console.log(response);
+        if (response.status === "SUCCESS") {
+          cart = [];
+          setStorageItem("cart", cart);
+          while (cartItemsDOM.firstChild) {
+            cartItemsDOM.removeChild(cartItemsDOM.firstChild);
+          }
+          cartItemCountDOM.textContent = 0;
+          cartTotalDOM.textContent = `Total : ${formatPrice(0)} `;;
+        }
+      },
+      onClose: function (data) {
+        //Implement what should happen when the modal is closed here
+        // console.log(data);
+
+      },
+    });
+  });
+}
+setMonnify()
