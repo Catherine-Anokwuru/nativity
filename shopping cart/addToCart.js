@@ -2,7 +2,7 @@ import { getElement } from "./utils.js";
 import { formatPrice } from "../utils.js";
 const cartItemsDOM = getElement(".cart-items");
 const addToCartDOM = ({ id, title, price, img, amount }) => {
-  console.log({ id, title, price, img, amount });
+  // console.log({ id, title, price, img, amount });
   const article = document.createElement("article");
   article.classList.add("cart-item");
   article.setAttribute("data-id", id);

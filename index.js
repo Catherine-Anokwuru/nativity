@@ -2,6 +2,7 @@
 import "./shopping cart/toggleSidebar.js";
 import "./shopping cart/toggleCart.js";
 import './shopping cart/setupCart.js'
+
 // specific imports
 import { fetchProduct } from "./global/fetchProducts.js";
 import { setupStore, store } from "./store/store.js";
