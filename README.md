@@ -23,3 +23,7 @@ The feature ideas for this project have been completely implemented. In this app
  
 - Checkout cart products and pay through the Monnify payment gateway
 
+## **Built With**
+- Vanilla JS
+- SCSS
+- HTML
