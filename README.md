@@ -27,3 +27,6 @@ The feature ideas for this project have been completely implemented. In this app
 - Vanilla JS
 - SCSS
 - HTML
+
+## **Improvements**
+- The project could be more organised in a folder structure to enhance readability and maintainability.
