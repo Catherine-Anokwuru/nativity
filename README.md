@@ -30,3 +30,4 @@ The feature ideas for this project have been completely implemented. In this app
 
 ## **Improvements**
 - The project could be more organised in a folder structure to enhance readability and maintainability.
+- Loading states could have been added for a more optimized and better User Experience
